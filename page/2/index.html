@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/2/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-51/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-51/" class="post-title-link" itemprop="url">新概念英语3-Lesson 51:Predicting the future</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:48:01" itemprop="dateCreated datePublished" datetime="2019-03-10T15:48:01+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-51"><a href="#Lesson-51" class="headerlink" title="Lesson 51"></a>Lesson 51</h1><p>Predicting the future<br>预测未来<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What was the ‘future’ electronic development that Leon Bagrit wasn’t able to foresee?<br>Predicting the future is notoriously difficult. Who could have imagined, in the mid 1970s, for<br>example, that by the end of the 20th century, computers would be as common in people’s homes as<br>TV sets? In the 1970s, computers were common enough, but only in big business, government<br>departments, and large organizations. These were the so-called mainframe machines. Mainframe<br>computers were very large indeed, often occupying whole air-conditioned rooms, employing<br>full-time technicians and run on specially-written software. Though these large machines still exist,<br>many of their functions have been taken over by small powerful personal computers, commonly<br>known as PCs.<br>In 1975, a primitive machine called the Altair, was launched in the USA. It can properly be<br>described as the first ‘home computer’ and it pointed the way to the future. This was followed, at<br>the end of the 1970s, by a machine called an Apple. In the early 1980s, the computer giant, IBM<br>produced the world’s first Personal Computer. This ran on an ‘operating system’ called DOS,<br>produced by a then small company named Microsoft. The IBM Personal Computer was widely<br>copied. From those humble beginnings, we have seen the development of the user-friendly home<br>computers and multimedia machines which are in common use today.<br>Considering how recent these developments are, it is even more remarkable that as long ago<br>as the 1960s, an Englishman, Leon Bagrit, was able to predict some of the uses of computers<br>which we know today. Bagrit dismissed the idea that computers would learn to ‘think’ for<br>themselves and would ‘rule the world’, which people liked to believe in those days. Bagrit foresaw<br>a time when computers would be small enough to hold in the hand, when they would be capable<br>of providing information about traffic jams and suggesting alternative routes, when they would be<br>used in hospitals to help doctors to diagnose illnesses, when they would relieve office workers and<br>accountants of dull, repetitive clerical work. All these computer uses have become commonplace.<br>Of course, Leon Bagrit could not possibly have foreseen the development of the Internet, the<br>worldwide system that enables us to communicate instantly with anyone in any part of the world<br>by using computers linked to telephone networks. Nor could he have foreseen how we could use<br>the Internet to obtain information on every known subject, so we can read it on a screen in our<br>homes and even print it as well if we want to. Computers have become smaller and smaller, moreand more powerful and cheaper and cheaper. This is what makes Leon Bagrit’s predictions<br>particularly remarkable. If he, or someone like him, were alive today, he might be able to tell us<br>what to expect in the next fifty years.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>notoriously<br>adv. (尤指因坏事)众所周知地<br>full-time<br>adj. 专职的<br>n. technician<br>技师<br>n. software<br>软件<br>IBM<br>(美国)国际商用机器公司(International Business Machines)<br>DOS<br>磁盘操作系统(Disk Operating System)<br>n.<br>Microsoft<br>(美国)微软公司<br>user-friendly<br>adj. 容易操作的,好用的<br>n.<br>mainframe<br>主机,中央处理机<br>multimedia<br>adj. 多媒体的<br>alternative<br>adj. 选择的<br>v. diagnose<br>诊断<br>v. relieve<br>减轻n.<br>accountant<br>会计<br>repetitive<br>adj. 重复的<br>clerical<br>adj. 办公室工作的<br>n. Internet<br>国际交互网<br>n. network<br>网络</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>众所周知,预测未来是非常困难的。举个例子吧,在 20 世纪 70 年代中叶又有谁能想得<br>到在 20 世纪末的时候,家庭用的计算机会像电视机一样普遍?在 70 年代,计算机已经相当<br>普及了,但只用在大公司,政府部门和大的组织之中,它们被称为主机。计算机主机确实很<br>大,常常占据了装有空调的多间房间,雇用专职的技师,而且得用专门编写的软件才能运行。<br>虽然这种大计算机仍然存在,但它们的许多功能已被体积小但功能齐全的个人电脑——即我<br>们常说的 PC 机——所代替了。<br>1975 年,美国推出了一台被称为“牛郎星”的原始机型。严格地说起来,它可以被称<br>为第一台“家用电脑”,而且它也指了今后的方向。70 年代末,在牛郎星之后又出现了一种<br>被称为“苹果”的机型。80 年代初,计算机行业的王牌公司美国国际商用机器公司(IBM)<br>生产出了世界上第一台个人电脑。这种电脑采用了一种被称为磁盘操作系统(DOS)的工作<br>程序,而这种程序是由当时规模不大的微软公司生产的。IBM 的个人电脑被大规模地模仿。<br>从那些简陋的初级阶段,我们看到了现在都已普及的、使用简便的家用电脑和多媒体的微机<br>的发展。<br>想一想这些发展的时间多么短,就更觉得英国人莱昂.巴格瑞特有着非凡的能力。他在<br>60 年代就能预言我们今天知道的计算机的一些用途。巴格瑞特根本不接受计算机可以学会<br>自己去“思考”和计算可以“统治世界”这种想法,而这种想法是当时的人们都愿意相信的。<br>巴格瑞特预示有一天计算机可以小到拿在手上,计算机可以使办公室人员和会计免除那些枯<br>燥、重复的劳动。计算机的所有这些功能现在都变得很平常。当然了,莱昂.巴格瑞特根本<br>没有可能预测到国际交互网——就是把计算机连结到电话线路上,以便和世界上任何一个地<br>方的人立即进行联系的一个世界范围的通讯系统——的发展。他也无法预测到我们可以利用<br>国际交互网获取有关任何已知专题的信息,以便在家里的屏幕上阅读,如果愿意的话甚至可<br>以将其打印出来。计算机已经变得体积越来越小,功能越来越多,价格越来越低,这就是莱<br>昂.巴格瑞特的预测非凡的地方。如果他或是像他的什么人今天还活着的话,他大概可以告<br>诉我们下一个 50 年后会发生什么事情。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-50/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-50/" class="post-title-link" itemprop="url">新概念英语3-Lesson 50:New Year resolutions</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:47:19" itemprop="dateCreated datePublished" datetime="2019-03-10T15:47:19+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-50"><a href="#Lesson-50" class="headerlink" title="Lesson 50"></a>Lesson 50</h1><p>New Year resolutions<br>新年的决心<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What marked the end of the writer’s New Year resolutions?<br>The New Year is a time for resolutions. Mentally, at least, most of us could compile<br>formidable lists of ‘dos’ and ‘don’ts’. The same old favorites recur year in year out withmonotonous regularity. We resolve to get up earlier each morning, eat less, find more time to play<br>with the children, do a thousand and one jobs about the house, be nice to people we don’t’ like,<br>drive carefully, and take the dog for a walk every day. Past experience has taught us that certain<br>accomplishments are beyond attainment. If we remain inveterate smokers, it is only because we<br>have so often experienced the frustration that results from failure. Most of us fail in our efforts at<br>self-improvement because our schemes are too ambitious and we never have time to carry them<br>out. We also make the fundamental error of announcing our resolutions to everybody so that we<br>look even more foolish when we slip back into our bad old ways. Aware of these pitfalls, this year<br>I attempted to keep my resolutions to myself. I limited myself to two modest ambitions: to do<br>physical exercise every morning and to read more of an evening. An all-night party on New Year’s<br>Eve provided me with a good excuse for not carrying out either of these new resolutions on the<br>first day of the year, but on the second, I applied myself assiduously to the task.<br>The daily exercises lasted only eleven minutes and I proposed to do them early in the<br>morning before anyone had got up. The self-discipline required to drag myself out of bed eleven<br>minutes earlier than usual was considerable. Nevertheless, I managed to creep down into the living<br>room for two days before anyone found me out. After jumping about on the carpet and twisting the<br>human frame into uncomfortable positions, I sat down at the breakfast table in an exhausted<br>condition. It was this that betrayed me. The next morning the whole family trooped in to watch the<br>performance. That was really unsettling, but I fended off the taunts and jibes of the family<br>good-humouredly and soon everybody got used to the idea. However, my enthusiasm waned. The<br>time I spent at exercises gradually diminished. Little by little the eleven minutes fell to zero. By<br>January 10th, I was back to where I had started from. I argued that if I spent less time exhausting<br>myself at exercises in the morning, I would keep my mind fresh for reading when I got home<br>formwork Resisting the hypnotizing effect of television, I sat in my room for a few evenings with<br>my eyes glued to book. One night, however, feeling cold and lonely, I went downstairs and sat in<br>front of the television pretending to read. That proved to be my undoing, for I soon got back to my<br>old bad habit of dozing off in front of the screen. I still haven’t given up my resolution to do more<br>reading. In fact, I have just bought a book entitled How to Read a Thousand Words a Minute.<br>Perhaps it will solve my problem, but I just haven’t had time to read it!</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n.<br>resolution<br>决心<br>mentally<br>adv. 内心里<br>v.<br>compile<br>编辑,编制<br>formidable<br>adj. 令人畏惧的v. recur<br>再发生,又出现<br>n. regularity<br>规律性<br>n. accomplishment<br>成就<br>n. attainment<br>达到<br>inveterate<br>adj. 根深蒂固的<br>n. self-improvement<br>自我完善<br>n. scheme<br>简单的计划,方案<br>ambitious<br>adj. 雄心勃勃的<br>n.<br>pitfall<br>意外的困难,易犯的错误<br>modest<br>adj. 要求不过分的<br>assiduously<br>adv. 刻苦地<br>n. self-discipline<br>自我约束<br>n. frame<br>躯体<br>v. betray<br>暴露,显露<br>v. troop<br>成群结队地走动v. unsettle<br>使不安<br>n. taunt<br>嘲笑,奚落人的话<br>n. jibe<br>嘲弄,挖苦<br>good-humouredly<br>adv. 和气地,心情好地<br>v. wane<br>逐渐变小,变弱<br>v. hypnotize<br>使欲睡,使蒙胧<br>n. undoing<br>祸根,毁灭的原因<br>n. screen<br>电视机屏幕</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>新年是下决心的时候,至少在大多数人的心里会编排出一份“应做什么”和“不应做什<br>么”的令人生畏的单子。相同的决心以单调的规律年复一年地出现。我们决心每天早晨起得<br>早些;吃得少些;多花点时间与孩子们一起做游戏;做大量的家务;对不喜欢的人友善一些;<br>小心驾车;每天都要带着狗散步;等等。以往的经验告诉我们有些事是办不到的。如果我们<br>烟瘾大,戒不掉,那是因为屡戒屡败,失去信心。我们大多数人想自我完善却遭到失败,这<br>是因为我们的规划过于宏大,而又根本没有时间去实施。我们还犯有一个根本性的错误,即<br>把我们的决心向大家宣布。这样一旦滑回到那些老习惯上去,我们在别人的眼里会显得更加<br>难堪。我深知这些问题,于是,今年我对自己的计划要严加保密,只给自己定下两项适中的<br>任务;每天早上锻炼身体,每天晚上多看点书。新年除夕举办的一次通宵晚会,使我理直气<br>壮地在新年头一天免去了这两项任务。不过,新年第二天,我全力以赴地照着去做了。<br>早锻炼一共只有 11 分钟,我打算在别人起床之前进行。这就要求我比平时早 11 分钟把<br>自己从床上拽起来,这种自我约束是很艰苦的。不过开头两天我还是成功地蹑手蹑脚地来到<br>楼下起居室,被谁也没发现。我在地毯上跳来蹦过去,扭曲身子,摆出各种姿势,弄得浑身<br>不舒服,然后坐到桌边吃早饭,一副筋疲力尽的样子。正是这副模样泄露了我的秘密。第二<br>天早晨全家人结队来到起居室看我表演。这真叫人不好意思,但我心平气和地顶住全家人的<br>嘲笑和奚落。不久,大家对我习以为常了,而这时我的热情却减退了。我花在锻炼上的时间<br>逐渐减少,慢慢地从 11 分钟减到了零。到了 1 月 10 日,我恢复了原来的作息时间。我辩解说,早晨少耗费精力锻炼,晚上下班回家看书时头脑更清醒些。有几天晚上,我极力摆脱了<br>电视的诱惑,坐在自己的房间里,两眼盯在书上。可是,有一天夜里,我感到又冷又孤单,<br>便来到楼下坐在电视机前假装看书。这下我可完了,因为不一会儿,我就恢复了以前的坏习<br>惯,在屏幕前打起瞌睡来。但我还没有放弃多看些书的决心。事实上,我刚买来一本叫《一<br>分钟读一千字的诀窍》的书。也许这本书能解决我的问题,但我一直还没时间去看这本书!</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-49/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-49/" class="post-title-link" itemprop="url">新概念英语3-Lesson 49:The ideal servant</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:46:19" itemprop="dateCreated datePublished" datetime="2019-03-10T15:46:19+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-49"><a href="#Lesson-49" class="headerlink" title="Lesson 49"></a>Lesson 49</h1><p>The ideal servant<br>理想的仆人<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>It is a good thing my aunt Harriet died years ago. If she were alive today she would not be<br>able to air her views on her favourite topic of conversation: domestic servants. Aunt Harriet lived<br>in that leisurely age when servants were employed to do housework. She had a huge, rambling<br>country house called ‘The Gables’. She was sentimentally attached to this house, for even though it<br>was far too big for her needs, she persisted in living there long after her husband’s death. Before<br>she grew old, Aunt Harriet used to entertain lavishly. I often visited The Gables when I was boy.<br>No matter how many guests were present, the great house was always immaculate. The parquet<br>floors shone like mirrors; highly polished silver was displayed in gleaming glass cabinets; even<br>my uncle’s huge collection of books was kept miraculously free from dust. Aunt Harriet presided<br>over an invisible army of servants that continuously scrubbed, cleaned, and polished. She always<br>referred to them as ‘the shifting population’, for they came and went with such frequency that I<br>never even got a chance to learn their names. Though my aunt pursued what was, in those days, an<br>enlightened policy, in that she never allowed her domestic staff to work more than eight hours a<br>day, she was extremely difficult to please. While she always criticized the fickleness of human<br>nature, she carried on an unrelenting search for the ideal servant to the end of her days, even after<br>she had been sadly disillusioned by Bessie.<br>Bessie worked for Aunt Harriet for three years. During that time she so gained my aunt’s<br>confidence that she was put in charge of the domestic staff. Aunt Harriet could not find words to<br>praise Bessie’s industriousness and efficiency. In addition to all her other qualifications, Bessie<br>was an expert cook. She acted the role of the perfect servant for three years before Aunt Harriet<br>discovered her ‘little weakness’. After being absent from the Gables for a week, my aunt<br>unexpectedly returned one afternoon with a party of guests and instructed Bessie to prepare dinner.<br>No only was the meal well below the usual standard, but Bessie seemed unable to walk steadily.<br>She bumped into the furniture and kept mumbling about the guests. When she came in with the<br>last course – a huge pudding – she tripped on the carpet and the pudding went flying through the<br>air, narrowly missed my aunt, and crashed on the dining table with considerable force. Though this<br>caused great mirth among the guests, Aunt Harriet was horrified. She reluctantly came to the<br>conclusion that Bessie was drunk. The guests had, of course, realized this from the moment Bessie<br>opened the door for them and, long before the final catastrophe, had had a difficult time trying to<br>conceal their amusement. The poor girl was dismissed instantly. After her departure, Aunt Harriet<br>discovered that there were piles of empty wine bottles of all shapes and sizes neatly stacked in<br>what had once been Bessie’s wardrobe. They had mysteriously found their way there from the<br>wine cellar!</p>
+<h1 id="New-words-and-expressions-生词和短语rambling"><a href="#New-words-and-expressions-生词和短语rambling" class="headerlink" title="New words and expressions 生词和短语rambling"></a>New words and expressions 生词和短语rambling</h1><p>adj. 杂乱无章的<br>sentimentally<br>adv. 感情上,多情地<br>immaculate<br>adj. 清洁的,无污点的<br>lavishly<br>adv. 慷慨地,大方地<br>n. parquet<br>镶木地板<br>v. gleam<br>发亮,闪光<br>v. preside<br>指挥<br>invisible<br>adj. 看不见的,无形的<br>v.<br>scrub<br>擦拭,刷洗<br>enlightened<br>adj. 开明的<br>n.<br>fickleness<br>变化无常<br>unrelenting<br>adj. 不屈不挠的,不松懈的确良<br>v. disillusion<br>使幻想破灭的<br>n. qualification<br>资格,能力<br>n. mirth<br>欢笑,高兴v. stack<br>整齐地堆放<br>n. cellar<br>地窖</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>我的姑妈哈丽特好多年前就去世了,这倒是件好事。如果她活到今天,她将不能就她热<br>衷的话题“佣人”发表意见了。哈丽特生活在一个悠闲的年代,家务事都由雇来的佣人代劳。<br>她在乡下有一幢巨大杂乱的房子,叫作“山墙庄园”。她对这幢房子在感情上难舍难分。房<br>子实在太大了,但在丈夫去世多年后,她仍然执意长年住在那儿。哈丽特姑妈年轻时,喜欢<br>大摆宴席,招待宾客。我小时候常去“山墙庄园”作客。不管去多少宾客,大房子里总是收<br>拾得干干净净。镶木地板洁如明镜,擦得发亮的银器陈列在明亮的玻璃柜里,连姑夫的大量<br>藏书也保存得很好,奇迹般地一尘不染。哈丽特姑妈统率着一支看不见的佣人大军,他们不<br>停地擦拭、清扫、刷洗。她称这些佣人叫“流动人口”,因为他们来匆匆,所以我甚至都没<br>有机会知道他们的姓名。姑妈待佣人在当时算是开明的,从来不让佣人每天工作超过 8 小时,<br>但他们很难使她称心如意。她一方面总是批评人的本性朝三暮四,另一方面她又持之以恒地<br>寻找一个理想的佣人。即使在贝西大大地伤她的心之后,她还在找,一直到她死去。<br>贝西在哈丽特家干了 3 年。在此期间,她赢得了姑母的赏识,甚至当上了大管家。哈丽<br>特不知该用什么言辞来赞扬贝西的勤奋与高效。贝西除了有各种本领以外,还是一个烹饪大<br>师。她担任“理想仆人”角色 3 年之后,哈丽特终于发现她有“小小的弱点”。一次,姑妈<br>有一个星期没在“山墙庄园”住。一天下午,她出其不意地回来了,带来一大批客人,吩咐<br>贝西准备晚饭。结果,不仅饭菜远不如平时做得好,而且贝西走起路来似乎东倒西歪。她撞<br>到了家具上,嘴里还不断咕咕哝哝议论客人。当她端着最后一道菜——一大盘布丁——走进<br>屋来时,在地毯上绊了一跤。布丁飞到半空,从姑母身边擦过,然后狠狠地砸在餐桌上。这<br>件事引起了客人们的欢笑,但哈丽特却着实吓了一跳。她不得不认定贝西是喝醉了。客人们<br>自然从贝西为他们开门那一刻起就看出来了,在好长一段时间里,即最后这个乱子发生前,<br>他们努力克制才没笑出声来。贝西当即被解雇了。贝西走后,哈丽特姑妈发现在贝西以前用<br>过的衣柜里整整齐齐地放着一堆堆形状各导、大小不一的酒瓶子。这些酒瓶神不知鬼不觉地<br>从酒窖来到了这里。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-48/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-48/" class="post-title-link" itemprop="url">新概念英语3-Lesson 48:The silent village</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:45:39" itemprop="dateCreated datePublished" datetime="2019-03-10T15:45:39+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-48"><a href="#Lesson-48" class="headerlink" title="Lesson 48"></a>Lesson 48</h1><p>The silent village<br>沉默的村庄<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>Why was the village silent?<br>In this much-travelled world, there are still thousands of places which are inaccessible to<br>tourists. We always assume that villagers in remote places are friendly and hospitable. But people<br>who are cut off not only from foreign tourists, but even from their own countrymen can be hostile<br>to travellers. Visits to really remote villages are seldom enjoyable – as my wife and I discovered<br>during a tour through the Balkans.<br>We had spent several days in a small town and visited a number of old churches in the<br>vicinity. These attracted many visitors, for they were not only of great architectural interest, but<br>contained a large number of beautifully preserved frescoes as well. On the day before our<br>departure, several bus loads of tourists descended on the town. This was more than we could bear,<br>so we decided to spend our last day exploring the countryside. Taking a path which led out of the<br>town, we crossed a few fields until we came to a dense wood. We expected the path to end<br>abruptly, but we found that it traced its way through the trees. We tramped through the wood for<br>over two hours until we arrived at a deep stream. We could see that the path continued on the other<br>side, but we had no idea how we could get across the stream. Suddenly my wife spotted a boat<br>moored to the bank. In it there was a boatman fast asleep. We gently woke him up and asked him<br>to ferry us to the other side. Though he was reluctant to do so at first, we eventually persuaded<br>him to take us.<br>The path led to a tiny village perched on the steep sides of a mountain. The place consisted of<br>a straggling unmade road which was lined on either side by small houses. Even under a clear blue<br>sky, the village looked forbidding, as all the houses were built of grey mud bricks. The village<br>seemed deserted, the only sign of life being an ugly-looking black goat on a short length of rope<br>tied to a tree in a field nearby. Sitting down on a dilapidated wooden fence near the field, we<br>opened a couple of tins of sardines and had a picnic lunch. All at once, I noticed that my wife<br>seemed to be filled with alarm. Looking up I saw that we were surrounded by children in rags who<br>were looking at us silently as we ate. We offered them food and spoke to them kindly, but they<br>remained motionless. I concluded that they were simply shy of strangers. When we later walked<br>down the main street of the villager, we were followed by a silent procession of children. The<br>village which had seemed deserted, immediately came to life. Faces appeared at windows. Men inshirt sleeves stood outside their houses and glared at us. Old women in black shawls peered at us<br>from doorways. The most frightening thing of all was that not a sound could be heard. There was<br>no doubt that we were unwelcome visitors. We needed no further warning. Turning back down the<br>main street, we quickened our pace and made our way rapidly towards the stream where we hoped<br>the boatman was waiting.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>inaccessible<br>adj. 难接近的,达不到的<br>hospitable<br>adj. 不好客的<br>hostile<br>adj. 不友好的,有敌意的<br>n.<br>vicinity<br>周围,近邻<br>architectural<br>adj. 建筑的<br>n.<br>fresco<br>壁画<br>abruptly<br>adv. 突然地,意外地<br>v. tramp<br>徒步行进<br>v. moor<br>(用绳、链、锚)系(船)<br>v. ferry<br>(用渡船)运<br>v. straggle<br>蔓延,散乱分布<br>n. sardine<br>沙丁鱼,沙丁鱼罐头n.<br>rag<br>破烂衣服<br>procession<br>adj. 不动的<br>n. shawl<br>披巾,围巾<br>v. peer<br>凝视,盯着<br>v. quicken<br>加快</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>在这个旅游频繁的世界上,仍有成千上万个游人足迹未至的地方。人们总是以为偏僻的<br>地方的村民们热情好客。但是,那些不但与外国旅游者隔绝,而且与本国同胞隔绝的人们有<br>可能对游客抱有敌意。到真正偏僻的村庄去旅游并不是一件愉快的事情。我与妻子在一次周<br>游巴尔干半岛时对此深有体会。<br>我们在一座小镇上逗留了几天,参观了附近的许多古老的教堂。这些教堂吸引大量游客,<br>不仅是因为建筑风格奇特,而且还有大量保存完好的壁画。我们离开小镇的前一天,镇上来<br>了几辆满载游客的公共汽车。人多得使我们难以忍受,于是我们决定利用最后一天去乡间一<br>游。我们走上了一条出镇的小路,穿过几块农田,来到一片茂密的树林。我们原以为小路会<br>到此突然终止。没想到它到树林中继续向前延伸。我们在树林中跋涉了两个多小时,到了一<br>条深溪边。我们可以看到小路在深溪对岸继续向前伸展,但却不知如何越过这道深溪。突然,<br>妻子发现岸边泊着一条小船,船上有一船夫在呼呼大睡。我们轻轻地把他唤醒,请他把我们<br>摆渡过溪。一开始,他很不愿意,但经劝说,终于同意了。<br>顺着小路,我们来到一个座落在陡峭山坡上的小村庄。这儿有一条未经修筑的弯弯曲曲<br>的道路,路两边排列着一些矮小的农舍。农舍全用灰色的土坯建成,因此,即使在晴朗的蓝<br>天底下,村庄看上去也会令人感到难以亲近。村里似乎无人居住,唯一的生命迹象是附近田<br>里一只面目可憎的黑山羊,用一截短绳拴在一棵树上。我们在田边一堵东倒西歪的篱笆墙上<br>坐下来,打开几听沙丁鱼罐头,吃了一顿野外午餐。突然,我注意到妻子十分惊恐。我抬头<br>一看,发现我们被一群衣衫褴褛的小孩团团围住了,他们在默不作声地看着我们吃饭。我们<br>给他们东西吃,客客气气地同他们交谈,但他们却一动也不动。我认为这不过是他们在陌生<br>人面前表现出的害羞。后来,我们在村里的主要街道上行走的时候,一队默不作声的孩子跟<br>在我们后头。刚才还似乎空荡荡的村庄一下子活跃了起来,窗口露出了一张张面孔,只穿着<br>衬衣的男人们站在屋子外面凶狠地盯着我们,披黑纱巾的老妇人站在门口偷偷地瞅着我们。<br>最令人害怕的是到处没有一点声音。毫无疑问,我们的来访是不受欢迎的。我们不需要进一<br>步的警告了。便掉转身子,沿着那条主要街道加快步伐,快速地朝深溪边走去,希望船夫还<br>在那儿等着我们。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-47/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-47/" class="post-title-link" itemprop="url">新概念英语3-Lesson 47:Too high a price?</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:44:50" itemprop="dateCreated datePublished" datetime="2019-03-10T15:44:50+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-47"><a href="#Lesson-47" class="headerlink" title="Lesson 47"></a>Lesson 47</h1><p>Too high a price?<br>代价太高?<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What does the writer describe as an ‘amusing old-fashioned source of noise’?<br>Pollution is the price we pay for an overpopulated, over industrialized planet. When you<br>come to think about it, there are only four ways you can deal with rubbish: dump it, burn it, turn it<br>into something you can use again, attempt to produce less of it. We keep trying all four methods,<br>but he sheer volume of rubbish we produce worldwide threatens to overwhelm us.<br>Rubbish, however, is only part of the problem of polluting our planet. The need to produce<br>ever-increasing quantities of cheap food leads to a different kind of pollution. Industrialized<br>farming methods produce cheap meat products: beef, pork and chicken. The use of pesticides and<br>fertilizers produces cheap grain and vegetables. The price we pay for cheap food may be already<br>too high: Mad Cow Disease (BSE) in cattle, salmonella in chicken and eggs, and wisteria in dairy<br>products. And if you think you’ll abandon meat and become a vegetarian, you have the choice of<br>very expensive organically-grown vegetables or a steady diet of pesticides every time you think<br>you’re eating fresh salads and vegetables, or just having an innocent glass of water!<br>However, there is an even more insidious kind of pollution that particularly affects urban<br>areas and invades our daily lives, and that is noise. Burglar alarms going off at any time of the day<br>or night serve only to annoy passers-by and actually assist burglars to burgle. Car alarms<br>constantly scream at us in the street and are a source of profound irritation. A recent survey of the<br>effects of noise revealed (surprisingly?) that dogs barking incessantly in the night rated the highest<br>form of noise pollution on a scale ranging from 1 to 7. The survey revealed a large number of<br>sources of noise that we really dislike. Lawn mowers whining on a summer’s day, late-nightparties in apartment blocks, noisy neighbors, vehicles of al kinds, especially large container trucks<br>thundering through quiet village, planes and helicopters flying overhead, large radios carried<br>round in public places and played at maximum volume. New technology has also made its own<br>contribution to noise. A lot of people object to mobile phones, especially when they are used in<br>public places like restaurants or on public transport. Loud conversations on mobile phones invade<br>our thoughts or interrupt the pleasure of meeting friends for a quiet chat. The noise pollution<br>survey revealed a rather spurring and possibly amusing old fashioned source of noise. It turned out<br>to be snoring! Men were found to be the worst offenders. It was revealed that 20% of men in their<br>mid-thirties snore. This figure rises to a staggering 60% of men in their sixties. Against these<br>figures, it was found that only 5% of women snore regularly, while the rest are constantly woken<br>or kept awake by their trumpeting partners. Whatever the source of noise, one thing is certain:<br>silence, it seems, has become a golden memory.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n.<br>pollution<br>污染<br>overpopulated<br>adj. 人口多的<br>over-industrialized<br>adj. 过度工业化的<br>sheer<br>adj. 纯粹的,不掺杂的<br>worldwide<br>adv. 在全世界<br>v. overwhelm<br>制服,使不知所措<br>v. pollute<br>污染<br>n. pesticide<br>杀虫剂<br>n. fertilizer<br>肥料<br>n. salmonella<br>沙门氏菌n. listeria<br>利斯特杆菌<br>n. vegetarian<br>吃素的人<br>organically-grown<br>adj. 有机培植的(不施化肥和其他化学药品培植)<br>insidious<br>adj. 暗中为害的<br>urban<br>adj. 城市的<br>n. burglar<br>窃贼<br>v. burgle<br>入室偷窃<br>v. scream<br>尖叫<br>profound<br>adj. 极度的<br>n.<br>irritation<br>烦躁<br>incessantly<br>adv. 连续不断地<br>v. whine<br>发呜呜声<br>n. helicopter<br>直升飞机<br>maximum<br>adj. 最大的<br>technologyn. 技术<br>n. contribution<br>贡献<br>mobile<br>adj. 可移动的<br>v. snore<br>打鼾<br>v. offender<br>冒犯者<br>staggering<br>adj. 令人惊愕的<br>v. trumpet<br>吹号<br>n. partner<br>伙伴</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>污染就是我们为这个人口过密,过度工业化的星球所付出的代价。当我们开始考虑垃圾<br>问题时,我们只有 4 种对付垃圾的方法:倾倒、焚烧、把垃圾变成再生材料或试图少产生一<br>些垃圾。我们一直在试这 4 种方式,但是,我们在世界范围内仅产生的垃圾的量就有把我们<br>覆盖的危险。<br>然而,垃圾只是我们这个星球的污染问题的一个方面。日益增长的对廉价食物的需求导<br>致了另一种形式的污染。工业化的农作方式生产出廉价的肉类制品——牛肉、猪肉和鸡肉。<br>使用杀虫剂和化肥生产出廉价的谷物和蔬菜。为了廉价食物我们付出代价已经太高了:牛肉<br>中的疯牛病,鸡肉和鸡蛋中的沙门氏菌,奶制品中的利斯特杆菌。如果你想放弃肉类而变成<br>一位素食者,那么你可以两者择一:或是选用价格昂贵、有机培植的蔬菜,或是当你认为在<br>享用新鲜色拉和新鲜蔬菜或饮用一杯无害的水的时候,实际上每次都不断吃进杀虫剂。<br>但是,还有一种更加隐蔽有害的污染,它专门影响城镇地区,侵袭我们的日常生活,那<br>就是噪音。防盗警报器在白天和黑夜的任何时候都会响起来,它的作用只是骚扰过路行人,<br>而实际上却帮助窃贼入室行窃。在街上,汽车的防盗警报不断对我们吼叫,这是人们极度烦<br>燥的一个原因,最近一个有关噪音的作用的调查(令人吃惊地)指出,夜间连续不断的狗叫<br>声,在一个从 1 级至 7 级刻度表上应列为最严重的噪间污染。这个调查揭示了我们所不喜欢<br>的大量的噪间的来源:夏天呜呜作响的割草机,公寓楼里深夜聚会的喧哗声,大声吵闹的邻<br>居,各式各样的车辆,特别是穿越寂静的村庄的集装箱卡车,从头顶飞过的飞机和直升机,<br>被带到公共场所、音量开到最大的大功率收音机。新技术也为噪音作了它的贡献。许多人都<br>反对移动式电话,特别是在如饭店,公共交通车等公共场所使用移动电话。用移动电话大声交谈干扰我们的思路,破坏我们和朋友在一起轻声聊天所得到的乐趣。这个有关噪音的污染<br>调查还揭示了一种出人意外而同时可能会引人意外而同时可能会引人发笑的老式噪音源。它<br>竟然是鼾声。人类是这方面的罪魁祸首。调查指出,20%的 35 岁左右的男人打鼾;而到 60<br>岁这个年龄段,这个数字上升到令人惊愕的 60%。与这些数字相比,只有 5% 的女性经常<br>打鼾;而其余则经常被与她们同睡、像吹号似地打着呼噜的男人吵醒或弄得睡不着。不管噪<br>声来自何方,有一点是肯定的:看来寂静已变成一种珍贵的回忆。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-46/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-46/" class="post-title-link" itemprop="url">新概念英语3-Lesson 46:Do it yourself</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:44:08" itemprop="dateCreated datePublished" datetime="2019-03-10T15:44:08+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-46"><a href="#Lesson-46" class="headerlink" title="Lesson 46"></a>Lesson 46</h1><p>Do it yourself<br>自己动手<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>Did the writer repair his lawn mower in the end? Why/Why not?So great is our passion for doing things for ourselves, that we are becoming increasingly less<br>dependent on specialized labour. No one can plead ignorance of a subject any longer, for these are<br>countless do-it-yourself publications. Armed with the right tools and materials, newlyweds gaily<br>embark on the task of decorating their own homes. Men, particularly, spend hours of their leisure<br>time installing their own fireplaces, laying out their own gardens; building garages and making<br>furniture. Some really keen enthusiasts go so far as to build their own computers. Shops cater for<br>the do-it-yourself craze not only by running special advisory services for novices, but by offering<br>consumers bits and pieces which they can assemble at home. Such things provide an excellent<br>outlet for pent up creative energy, but unfortunately not all of us are born handymen.<br>Some wives tend to believe that their husbands are infinitely resourceful and can fix anything.<br>Even men who can hardly drive a nail in straight are supposed to be born electricians, carpenters,<br>plumbers and mechanics. When lights fuse, furniture gets rickety, pipes get clogged, or vacuum<br>cleaners fail to operate, some woman assume that their husbands will somehow put things right.<br>The worst thing about the do-it-yourself game is that sometimes even men live under the delusion<br>that they can do anything, even when they have repeatedly been proved wrong. It is a question of<br>pride as much as anything else.<br>Last spring my wife suggested that I call in a man to look at our lawn mower. It had broken<br>down the previous summer, and though I promised to repair it, I had never got round to it. I would<br>not hear of the suggestion and said that I would fix it myself. One Saturday afternoon, I hauled the<br>machine into the garden and had a close look at it. As far as I could see, it needed only a minor<br>adjustment: a turn of a screw here, a little tightening up there, a drop of oil and it would be as<br>good as new. Inevitably the repair job was not quite so simple. The mower firmly refused to mow,<br>so I decided to dismantle it. The garden was soon littered with chunks of metal which had once<br>made up a lawn mower. But I was extremely pleased with myself. I had traced the cause of the<br>trouble. One of links in the chain that drives the wheels had snapped. After buying a new chain I<br>was faced with the insurmountable task of putting the confusing jigsaw puzzle together again. I<br>was not surprised to find that the machine still refused to work after I had reassembled it, for the<br>simple reason that I was left with several curiously shaped bits of metal which did not seem to fit<br>anywhere. I gave up in despair. The weeks passed and the grass grew. When my wife nagged me<br>to do something about it, I told her that either I would have to buy a new mower or let the grass<br>grow. Needless to say our house is now surrounded by a jungle. Buried somewhere in deep grass<br>there is a rusting lawn mower which I have promised to repair one day.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>v. plead<br>找(借口),辩解<br>n. ignorance<br>无知,不懂<br>n. publication<br>出版物n.<br>newlyweds<br>新婚夫妇<br>gaily<br>adv. 愉快地,高兴地<br>n.<br>leisure<br>空闲<br>keen<br>adj. 热心的,渴望的<br>advisory<br>adj. 咨询的<br>n. novice<br>新手<br>n. consumer<br>消费者,顾客<br>v. assemble<br>装配,组装<br>n. outlet<br>出路<br>creative<br>adj. 创造性的<br>n.<br>handyman<br>手巧的人,能工巧匠<br>resourceful<br>adj. 足智多谋的<br>v.<br>fuse<br>由于烧断保险丝而短路<br>rickety<br>adj. 要散架的,晃动的<br>v.<br>clog<br>堵塞n.<br>delusion<br>错觉<br>lawn mower<br>割草机<br>n. adjustment<br>调整<br>n. screw<br>螺丝钉<br>v. dismantle<br>拆卸<br>n. chunk<br>(厚)块<br>v. snap<br>绷断<br>insurmountable<br>adj. 不能克服的,难以对付的<br>n. jigsaw<br>线锯<br>v. nag<br>唠叨不休<br>v. rust<br>生锈</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>现在我们自己动手做事的热情很高,结果对于专业工人的依赖越来越少了。由于出版了<br>不计其数的教人自己动手做事的书报杂志,没有人再能说对某事一无所知。新婚夫妇找来合<br>适的工具和材料,喜气洋洋地开始布置新房。特别是男人,常利用空闲时间安装壁炉、布置<br>花园、建造车库、制作家具。有些热衷于自己动手的人甚至自己组装电脑。为了满足自己动<br>手热的需要,商店不仅为初学者提供专门的咨询服务,而且为顾客准备了各种零件,供他们<br>买回家去安装。这些东西为人们潜在的创造力提供了一个绝妙的用武之地。但不幸的是,我<br>们并非人人都是能工巧匠。<br>妻子常常认为她们的丈夫无比聪明能干。甚至那些连一枚钉子都钉不直的男人都被认为是天生的电工、木匠、水管工和机械师。每当电灯保险丝烧断、家具榫头松动、管道堵塞、<br>吸尘器不动时,有些妻子认为丈夫总有办法。自己动手的例子中最糟糕的是,有时甚至是男<br>人尽管接连失败却还误以为自己什么都行,原因就是要面子。<br>今年春天,妻子让我请人检查一下我家的割草机。那台割草机去年夏天就坏了,尽管我<br>答应修,但一直没抽出时间,我不愿听妻子的建议,说我自己会修。一个星期六的下午,我<br>把割草机拉到了花园里,仔细检查了一番。在我看来,只需稍加调整即可。这儿紧紧螺丝,<br>那儿固定一下,再加几滴油,就会像新的一样了。事实上,修理工作远不是那么简单。修完<br>后割草机还是纹丝不动。于是,我决定把它拆开。一会儿工夫,割草机便被拆成一个个金属<br>零件,乱七八糟地堆在花园里。但我却非常高兴,因为我找到了毛病所在。驱动轮子的链条<br>断了一节。我买来一根新链条后,面临的就是如何把这些令人眼花缭乱的拼板重新组装起来。<br>等我装完后,那台割草机仍然一动不动,对此我倒并不感到吃惊。原因很简单,因为还剩下<br>几个形状奇特的零件似乎哪里也装不上去。我无可奈何,只好罢休。几个星期过去了,草长<br>了起来。妻子喋喋不休让我想点办法。我告诉她,要么买一台新割草机,要么让草长下去。<br>不用说,我家现在已被丛林包围。深草丛中的某个地方有一台正在生锈的割草机,那就是我<br>曾答应某日要修理的割草机。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-45/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-45/" class="post-title-link" itemprop="url">新概念英语3-Lesson 45:The power of the press</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:43:09" itemprop="dateCreated datePublished" datetime="2019-03-10T15:43:09+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-45"><a href="#Lesson-45" class="headerlink" title="Lesson 45"></a>Lesson 45</h1><p>The power of the press<br>新闻报道的威力<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>Does the writer think the parents where lucky or unlucky to gain prosperity in this way? Why?<br>In democratic countries any efforts to restrict the freedom of the press are rightly condemned.<br>However, this freedom can easily be abused. Stories about people often attract far more public<br>attention than political events. Though we may enjoy reading about the lives of others, it is<br>extremely doubtful whether we would equally enjoy reading about ourselves. Acting on the<br>contention that facts are sacred, reporters can cause untold suffering to individuals by publishing<br>details about their private lives. Newspapers exert such tremendous influence that they can not<br>only bring about major changes to the lives of ordinary people but can even overthrow a<br>government.<br>The story of a poor family that acquired fame and fortune overnight, dramatically illustrates<br>the power of the press. The family lived in Aberdeen, a small town of 23,000 inhabitants in South<br>Dakota. As the parents had five children, life was a perpetual struggle against poverty. They were<br>expecting their sixth child and were faced with even more pressing economic problems. If they<br>had only had one more child, the fact would have passed unnoticed. They would have continued to<br>struggle against economic odds and would have lived in obscurity. But they suddenly became theparents of quintuplets, an aeroplane arrived in Aberdeen bringing sixty reporters and<br>photographers.<br>The rise to fame was swift. Television cameras and newspapers carried the news to everyone<br>in the country. Newspapers and magazines offered the family huge sums for the exclusive rights to<br>publish stories and photographs. Gifts poured in not only from unknown people, but room baby<br>food and soap manufacturers who wished to advertise their products. The old farmhouse the<br>family lived in was to be replaced by new $500,000 home. Reporters kept pressing for interviews<br>so lawyers had to be employed to act as spokesmen for the family at press conferences. While the<br>five babies were babies were still quietly sleeping in oxygen tents in hospital nursery, their parents<br>were paying the price for fame. It would never again be possible for them to lead normal lives.<br>They had become the victims of commercialization, for their names had acquired a market value.<br>Instead of being five new family members, these children had immediately become a commodity.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>democratic<br>adj. 民主的<br>v. restrict<br>限制<br>v. abuse<br>滥用<br>n. contention<br>论点<br>untold<br>adj. 数不尽<br>South Dakota<br>南达科他州(美国)<br>perpetual<br>adj. 永久的<br>n. quintuplet<br>五胞胎之一<br>n. obscurity<br>默默无闻<br>radically<br>adv. 彻底地,完全地exclusive<br>adj. 独占的,独家的<br>n. nursery<br>育婴室,保育室<br>n. commercialization<br>商品化<br>n. commodity<br>商品</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>在民主国家里,任何限制新闻自由的企图都理所当然地受到谴责。然而,这种自由很容<br>易被滥用。常人轶事往往比政治事件更能引起公众注意。我们都喜欢看关于别人生活的报道,<br>但是否同样喜欢看关于自己生活的报道,就很难说了。记者按事实至上的论点行事,发表有<br>关别人生活的细节,有时会给当事人造成极大的痛苦。新闻具有巨大的威力。它们不仅可以<br>给寻常人家的生活带来重大的变化,甚至还能推翻一个政府。<br>下面这户穷人一夜之间出名发财的故事戏剧性地说明了新闻报道威力。这户人家住在南<br>达科他州一个人口为 23,000 的小镇上,镇名为阿拜丁。家里已有 5 个孩子,全家人常年<br>在贫困中挣扎。第 6 个孩子即将问世,他们面临着更为严峻的经济问题。如果他们只添了 1<br>个孩子,这件事本来就不会引起任何人的注意。这家人会继续为克服经济上的拮据而奋斗,<br>并默默无闻地活下去。但是他们出人意料生了个五胞胎,4 女 1 男。这事使他们的生活发生<br>了根本的变化。五胞胎降生第二天,一架飞机飞抵阿拜丁,随机带来 60 名记者与摄影师。<br>这一家迅速出了名。电视摄像机和报纸把消息传送到全国。报纸、杂志出高价向他们购<br>买文字、图片的独家报道权。不但素昧平生的人寄来了大量的礼物,而且婴儿食品、婴儿肥<br>皂制造厂商为了替自己产品做广告也寄来了大量的礼物。这家人住的旧家舍将由一座价值<br>50 万美元的新住宅所取代。由于记者纷纷要求会见,他们不得不请了律师充当他们家的发<br>言人举行记者招待会。眼下,五胞胎还静静地躺在医院婴儿室的氧气帐里,他们的父母却为<br>这名声付出了代价,他们再也无法过正常的生活。他们成了商业化的受害者,因为他们的名<br>字具有了市场价值。这些孩子立即成了商品,而不是 5 个新的家庭成员。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-44/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-44/" class="post-title-link" itemprop="url">新概念英语3-Lesson 44:Speed and comfort</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:42:32" itemprop="dateCreated datePublished" datetime="2019-03-10T15:42:32+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-44"><a href="#Lesson-44" class="headerlink" title="Lesson 44"></a>Lesson 44</h1><p>Speed and comfort<br>又快捷又舒适<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>Which type of transport does the writer prefer, do you think?<br>People travelling long distances frequently have to decide whether they would prefer to go by<br>land, sea, or air. Hardly anyone can positively enjoy sitting in a train for more than a few hours.<br>Train compartments soon get cramped and stuffy. It is almost impossible to take your mind off the<br>journey. Reading is only a partial solution, for the monotonous rhythm of the wheels clicking on<br>the rails soon lulls you to sleep. During the day, sleep comes in snatches. At night, when you really<br>wish to go to sleep, you rarely manage to do so. If you are lucky enough to get a sleeper, you<br>spend half the night staring at the small blue light in the ceiling, or fumbling to find you ticket for<br>inspection. Inevitably you arrive at your destination almost exhausted. Long car journeys are evenless pleasant, for it is quite impossible even to read. On motorways you can, at least, travel fairly<br>safely at high speeds, but more often than not, the greater part of the journey is spent on roads<br>with few service stations and too much traffic. By comparison, ferry trips or cruises offer a great<br>variety of civilized comforts. You can stretch your legs on the spacious decks, play games, meet<br>interesting people and enjoy good food – always assuming, of course, that the sea is calm. If it is<br>not, and you are likely to get seasick, no form of transport could be worse. Even if you travel in<br>ideal weather, sea journeys take a long time. Relatively few people are prepared to sacrifice<br>holiday time for the pleasure of travlling by sea.<br>Aeroplanes have the reputation of being dangerous and even hardened travellers are<br>intimidated by them. They also have the disadvantage of being an expensive form of transport.<br>But nothing can match them for speed and comfort. Travelling at a height of 30,000 feet, far above<br>the clouds, and at over 500 miles an hour is an exhilarating experience. You do not have to devise<br>ways of taking your mind off the journey, for an aeroplane gets you to your destination rapidly.<br>For a few hours, you settle back in a deep armchair to enjoy the flight. The real escapist can watch<br>a film and sip champagne on some services. But even when such refinements are not available,<br>there is plenty to keep you occupied. An aeroplane offers you an unusual and breathtaking view of<br>the world. You soar effortlessly over high mountains and deep valleys. You really see the shape of<br>the land. If the landscape is hidden from view, you can enjoy the extraordinary sight of unbroken<br>cloud plains that stretch out for miles before you, while the sun shines brilliantly in a clear sky.<br>The journey is so smooth that there is nothing to prevent you from reading or sleeping. However<br>you decide to spend your time, one thing is certain: you will arrive at your destination fresh and<br>uncrumpled. You will not have to spend the next few days recovering from a long and arduous<br>journey.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>positively<br>adv. 绝对地,完全地<br>n.<br>compartment<br>列车客车厢内的分隔间(或单间)<br>cramped<br>adj. 窄小的<br>stuffy<br>adj. 憋气的,闷气的<br>monotonous<br>adj. 枯燥的,乏味的<br>n.<br>rhythm<br>有节奏的运动v. click<br>发出咔哒声<br>v. lull<br>催人欲睡<br>n. snatch<br>短时,片段<br>n. sleeper<br>卧铺<br>v. fumble<br>乱摸,摸索<br>n. inspection<br>检查<br>inevitably<br>adv. 必然地,不可避免地<br>n. destination<br>目的地<br>v. exhaust<br>使精疲力尽<br>n. motorway<br>快车道<br>n. ferry<br>渡船<br>n. cruise<br>巡游船<br>v. civilize<br>使文明<br>spacious<br>adj. 宽敞的<br>seasickadj. 晕船的<br>v. intimidate<br>恐吓,恫吓<br>n. disadvantage<br>短处,缺点<br>exhilarating<br>adj. 使人高兴的,令人兴奋的<br>n. escapist<br>逍遥者<br>v. sip<br>呷,啜<br>n. champagne<br>香槟洒<br>n. refinement<br>精心的安排<br>breathtaking<br>adj.激动人心的;不寻常的<br>v.<br>soar<br>高飞,翱翔<br>effortlessly<br>adv. 不费力地<br>n.<br>landscape<br>景色<br>fresh<br>adj. 精神饱满的<br>uncrumpled<br>adj. 没有垮下来</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>出远门的人常常需要决定是走旱路、水路,还是坐飞机。很少有人能够真正喜欢坐几个小时以上的火车。车厢很快就变得拥挤、闷热,想摆脱开旅途的困扰是很难的。看书只能解决部<br>分问题。车轮与铁轨间单调的嘎喳声很快就会送你进入梦乡。白天是忽睡忽醒,到了夜晚,<br>你真想睡了,却很难入睡。即使你走运弄到一个卧铺,夜间有一半时间你会盯着车顶那盏小<br>蓝灯而睡不着觉;要不然就为查票摸索你的车票。一旦抵达目的地,你总是疲惫不堪。乘汽<br>车作长途旅行则更加不舒服,因为连看书都几乎不可能。在公路上还好,你至少能以相当快<br>的速度安全地向前行。但旅行的大部分时间都花在路上,而且只有很少的服务设施,交通也<br>很拥挤。相比之下,坐船旅行或环游可以得到文明世界的各种享受。你可以在甲板上伸展四<br>肢、做游戏,还能也很见到各种有趣的人,能享用各种美味佳肴——当然,这一切只有在大<br>海风平浪静的情况下才有可能。如果大海肆虐起来,你就可能晕船,那种难受劲儿是任何一<br>种别的旅行的方式都不会带来的。即使风平浪静,坐船旅行也要占用很长时间。没有多少人<br>会为享受坐船旅行的乐趣而牺牲假期的时间。<br>飞机以危险而著称,连老资格的旅行者也怕飞机。飞机另一个缺点是昂贵。但就速度与舒适<br>而言,飞机是无与伦比的。腾云驾雾,在 30,000 英尺高空以 500 英里的时速旅行,这种<br>经历令人心旷神怡。你不必想办法去摆脱旅途的困扰,因为飞机会迅速地把你送到目的地。<br>几小时之内,你躺在扶手椅上,享受着旅途的欢乐。真正会享受的人还可以在某些航班上看<br>一场电影和喝香槟。即使没有这些消遣条件,也总是有事可做。飞机上,你可以观察世界上<br>非同寻常的奇妙的美景。你毫不费劲地飞越高山幽谷,你确能饱览大地的风貌。如果这种景<br>色被遮住了,你可以观赏一下展现在你面前的、一望数英里的、连绵不断的云海,同时阳光<br>灿烂,天空清澈明朗。旅途平稳,丝毫不妨碍你阅读或睡眠。不管你打算如何消磨时间,有<br>件事是可以肯定的,即当你抵达目的地时,你感到精神焕发,毫无倦意,用不着因为漫长的<br>旅途的辛苦而花几天时间休息来恢复精神。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-43/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-43/" class="post-title-link" itemprop="url">新概念英语3-Lesson 43:Fully insured</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:41:50" itemprop="dateCreated datePublished" datetime="2019-03-10T15:41:50+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-43"><a href="#Lesson-43" class="headerlink" title="Lesson 43"></a>Lesson 43</h1><p>Fully insured<br>全保险<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>Who owned the pie and why?Insurance companies are normally willing to insure anything. Insuring public or private property is<br>a standard practice in most countries in the world. If, however, you were holding an open air<br>garden party or a fete it would be equally possible to insure yourself in the event of bad weather.<br>Needless to say, the bigger the risk an insurance company takes, the higher the premium you will<br>have to pay. It is not uncommon to hear that a shipping company has made a claim for cost of<br>salvaging a sunken ship. But the claim made by a local authority to recover the cost of salvaging a<br>sunken pie dish must surely be unique.<br>Admittedly it was an unusual pie dish, for it was eighteen feet long and six feet wide. It had<br>been purchased by a local authority so that an enormous pie could be baked for an annual fair. The<br>pie committee decided that the best way to transport the dish would be by canal, so they insured it<br>for the trip. Shortly after it was launched, the pie committee went to a local inn to celebrate. At the<br>same time, a number of teenagers climbed on to the dish and held a little party of their own.<br>Dancing proved to be more than the dish could bear, for during the party it capsized and sank in<br>seven feet of water.<br>The pie committee telephoned a local garage owner who arrived in a recovery truck to<br>salvage the pie dish. Shivering in their wet clothes, the teenagers looked on while three men dived<br>repeatedly into the water to locate the dish. They had little difficulty in finding it, but hauling it<br>out of the water proved to be a serious problem. The sides of the dish were so smooth that it was<br>almost impossible to attach hawsers and chains to the rim without damaging it. Eventually chains<br>were fixed to one end of the dish and a powerful winch was put into operation. The dish rose to<br>the surface and was gently drawn towards the canal bank. For one agonizing moment, the dish was<br>perched precariously on the bank of the canal, but it suddenly overbalanced and slid back into the<br>water. The men were now obliged to try once more. This time they fixed heavy metal clamps to<br>both sides of the dish so that they could fasten the chains. The dish now had to be lifted vertically<br>because one edge was resting against the side of the canal. The winch was again put into operation<br>and one of the men started up the truck. Several minutes later, the dish was again put into<br>operation and one of the water. Water streamed in torrents over its sides with such force that it set<br>up a huge wave in the canal. There was danger that the wave would rebound off the other side of<br>the bank and send the dish plunging into the water again. By working at tremendous speed, the<br>men managed to get the dish on to dry land before the wave returned.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>admittedly<br>adv. 公认地<br>v.<br>purchase<br>买<br>annual<br>adj. 一年一度的<br>teenagern.<br>(13 至 19 岁的)青少年<br>v. capsize<br>(船)翻<br>v. shiver<br>打颤,发抖<br>v. dive<br>(头向下)跳水<br>v. haul<br>拖曳<br>n. hawser<br>粗缆绳<br>n. rim<br>(圆形物品的)外沿,边<br>n. winch<br>绞车<br>agonizing<br>adj. 精神紧张的,提心吊胆的<br>v.<br>perch<br>处于(高处)<br>precariously<br>adv. 危险地,不稳固地<br>v. overbalance<br>失去平衡<br>n. clamp<br>夹钳,夹板<br>vertically<br>adv. 垂直地<br>n.<br>torrent<br>激流,洪流v.<br>rebound<br>弹回</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>保险公司一般说来愿意承保一切东西。承办公共财产或私人财产保险是世界上大部分国<br>家的正常业务。如果你要举办一次露天游园会或盛宴,为避免碰上不好的天气而遭受损失也<br>同样可以保险,不用说,保险公司承担风险越大,你付的保险费也就越高。航运公司为打捞<br>沉船而提出索赔,这是常有的事,但某地当局为打捞一只焙制馅饼的盘子提出索赔,倒是件<br>新鲜的事儿。<br>这个馅饼盘子确实少见,有 18 英尺长,6 英尺宽。某地方当局买下它用来焙制一个巨<br>大的馅饼为一年一度交易会助兴。馅饼委员会确认运输这只盘子的最佳方案是通过运河水<br>运。于是,他们对这只盘子的运输安全投了保。盘子下水后不久,馅饼委员会成员们来到当<br>地一家小酒店庆贺。就在这个时候,许多十几岁的孩子爬盘子举行他们自己的集会。他们跳<br>起了舞,盘子难以承受。舞会进行过程中,盘子倾覆,沉入了 7 英尺深的水中。<br>馅饼委员会给当地汽车修理库老板打电话,他闻讯后开着一辆急修车前来打捞盘子。那<br>些孩子们穿着湿衣服哆嗦,看着 3 个工人轮潜入水中以确定盘子的位置。他们没费多大事儿<br>就找到了盘子。可是把盘子捞出却是一个很大的难题。盘子四边十分光滑,要在盘边拴上绳<br>索或链条而同时又不损坏它是很难办到的。不过,他们终于将链条固定在盘子的一端,一台<br>大功率的绞车开动起来。盘子慢慢浮出水面,被轻轻地拽向运河岸边。在令人忐忑不安的瞬<br>间,盘子晃晃悠悠地上了岸,但它突然失去了平衡,又跌回水中。工人们只得再来一次。这<br>次,他们用沉重的金属夹子把盘子夹住,以便往盘子上安装铁链。这次,盘子必须垂直吊出<br>水面,因为盘子的一边紧靠着运河河岸。绞盘机再次启动,一位工人发动了急修车的引擎。<br>几分钟后,盘子被成功地拽出了水面。波浪从盘子两侧急涌而出,在运河里掀起一股大浪。<br>但是当波浪从河对岸折回来时,就有再次把盘子拖进水里的危险。工人们动作迅速,终于赶<br>在那股大浪返回之前把盘子拽到了岸上。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-42/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-42/" class="post-title-link" itemprop="url">新概念英语3-Lesson 42:Modern cavemen</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:41:01" itemprop="dateCreated datePublished" datetime="2019-03-10T15:41:01+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-42"><a href="#Lesson-42" class="headerlink" title="Lesson 42"></a>Lesson 42</h1><p>Modern cavemen<br>现代洞穴人<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>With what does the writer compare the Gouffre Berger?<br>Cave exploration, or pot-holing, as it has come to be known, is a relatively new sport.<br>Perhaps it is the desire for solitude or the chance of making an unexpected discovery that lures<br>people down to the depths of the earth. It is impossible to give a satisfactory explanation for a<br>pot-holer’s motives. For him, caves have the same peculiar fascination which high mountains have<br>for the climber. They arouse instincts which can only be dimly understood.<br>Exploring really deep caves is not a task for the Sunday afternoon rambler. Such<br>undertakings require the precise planning and foresight of military operations. It can take as long<br>as eight days to rig up rope ladders and to establish supply bases before a descent can be made<br>into a very deep cave. Precautions of this sort are necessary, for it is impossible to foretell the<br>exact nature of the difficulties which will confront the pot-holer. The deepest known cave in the<br>world is the Gouffre Berger near Grenoble. It extends to a depth of 3,723 feet. This immense<br>chasm has been formed by an underground stream which has tunneled a course through a flaw in<br>the rocks. The entrance to the cave is on a plateau in the Dauphine Alps. As it is only six feet<br>across, it is barely noticeable. The cave might never have been discovered has not the entrance<br>been spotted by the distinguished French pot-holer, Berger. Since its discovery, it has become a<br>sort of potholers’ Everest. Though a number of descents have been made, much of it still remains<br>to be explored.<br>A team of pot-holers recently went down the Gouffre Berger. After entering the narrow gap<br>on the plateau, they climbed down the steep sides of the cave until they came to narrow corridor.<br>They had to edge their way along this, sometimes wading across shallow streams, or swimming<br>across deep pools. Suddenly they came to a waterfall which dropped into an underground lake at<br>the bottom of the cave. They plunged into the lake, and after loading their gear on an inflatable<br>rubber dinghy, let the current carry them to the other side. To protect themselves from the icy<br>water, they had to wear special rubber suits. At the far end of the lake, they came to huge piles ofrubble which had been washed up by the water. In this part of the cave, they could hear an<br>insistent booming sound which they found was caused by a small waterspout shooting down into a<br>pool from the roof of the cave. Squeezing through a cleft in the rocks, the pot-holers arrived at an<br>enormous cavern, the size of a huge concert hall. After switching on powerful arc lights, they saw<br>great stalagmites – some of them over forty feet high – rising up like tree-trunks to meet the<br>stalactites suspended from the roof. Round about, piles of limestone glistened in all the colours of<br>the rainbow. In the eerie silence of the cavern, the only sound that could be heard was made by<br>water which dripped continuously from the high dome above them.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n. caveman<br>(远古)洞穴人<br>n. pot-holing<br>洞穴探险,洞穴探险运动<br>n. solitude<br>孤独,寂寞<br>v. lure<br>引诱,诱惑<br>n. pot-holer<br>洞穴探险者<br>n. undertaking<br>任务,工作<br>n. foresight<br>预见;深谋远虑<br>v. foretell<br>预言<br>n. Grenoble<br>格里诺布尔<br>n. chasm<br>断层,裂口,陷坑<br>n. flaw<br>小裂缝distinguished<br>adj. 杰出的,著名的<br>n. Everest<br>珠穆朗玛峰<br>v. wade<br>涉水<br>n. waterfall<br>瀑布<br>n. gear<br>一套用具<br>inflatable<br>adj. 可充气的<br>n.<br>rubble<br>碎瓦<br>insistent<br>adj. 连续的,不断的<br>v. boom<br>轰响<br>n. waterspout<br>强大的水柱<br>n. cleft<br>裂隙,开<br>n. cavern<br>在洞穴<br>n. stalagmite<br>石笋<br>n. stalactite<br>钟乳石<br>n. limestone<br>石灰石v.<br>glisten<br>闪烁<br>cerie<br>adj. 引塌恐惧的,可怕的<br>n.<br>dome<br>穹窿,圆顶</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>洞穴勘查——或洞穴勘探——是一项比较新的体育活动。寻求独处的愿望或寻求意外发<br>现的机会的欲望吸引人们来到地下深处。要想对洞穴探险者的动机作出满意的解释是不可能<br>的。对洞穴探险者来说,洞穴有一种特殊的魅力,就像高山对登山者有特殊魅力一样。为什<br>么洞空能引发人的那种探险本能,人们对此只能有一种模模糊糊的理解。<br>探测非常深的洞穴不是那些在星期日下午漫步的人所能胜任的。这种活动需要有军事行<br>动般的周密布署和预见能力。有时需要花费整整 8 天时间来搭起绳梯,建立供应基地,然后<br>才能到一个很深的洞穴里。作出这样的准备是必要的,因为无法预见到洞穴探险者究竟会遇<br>到什么性质的困难。世界上最深的洞穴是格里诺布尔附近的高弗.伯杰洞,深达 3,723 英尺。<br>这个深邃的洞穴是由一条地下暗泉冲刷岩石中的缝隙并使之慢慢变大而形成的。此洞的洞口<br>在丹芬阿尔卑斯山的高原上,仅 6 英尺宽,很难被发现。若不是法国著名洞穴探险家伯杰由<br>于偶然的机会发现了这个洞口的话,这个洞也许不会为人所知。自从被发现以后,这个洞成<br>了洞穴探险者的珠穆朗玛峰,人们多次进入洞内探险,但至今尚有不少东西有待勘探。<br>最近,一队洞穴探险者下到了高弗.伯杰洞里。他们从高原上的窄缝进去,顺着笔直陡<br>峭的洞壁往下爬。来到一条狭窄的走廊上。他们不得不侧着身子往前走,有时过浅溪,有时<br>游过深潭。突然,他们来到一道瀑布前,那瀑布奔泻而下,注入洞底一处地下湖里。他们跳<br>入湖中,把各种器具装上一只充气的橡皮艇,听任水流将他们带往对岸。湖水冰冷刺骨,他<br>们必须穿上一种特制的橡皮服以保护自己。在湖的尽头,他们见到一大堆一大堆由湖水冲刷<br>上岸的碎石。在这儿,他们可以听见一种连续不断的轰鸣声。后来他们发现这是由山洞顶部<br>的一个小孔里喷出的水柱跌落到水潭中发出的声音。洞穴探险者从岩石缝里挤身过去,来到<br>一个巨大的洞里,其大小相当于一个音乐厅。他们打开强力弧光灯,看见一株株巨大的石笋,<br>有的高达 40 英尺,像树干似地向上长着,与洞顶悬挂下来的钟乳石相接。周围是一堆堆石<br>灰石,像彩虹一样闪闪发光。洞里有一种可怕的寂静,唯一的可以听见的声响是高高的圆顶<br>上不间断地滴水的嘀嗒声。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">60</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+  <script id="ribbon" size="300" alpha="0.6" zindex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

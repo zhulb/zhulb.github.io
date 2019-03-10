@@ -1,0 +1,2256 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/3/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-41/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-41/" class="post-title-link" itemprop="url">新概念英语3-Lesson 41:Illusions of Pastoral peace</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:40:19" itemprop="dateCreated datePublished" datetime="2019-03-10T15:40:19+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-41"><a href="#Lesson-41" class="headerlink" title="Lesson 41"></a>Lesson 41</h1><p>Illusions of Pastoral peace<br>宁静田园生活的遐想<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What particular anxiety spoils the country dweller’s visit to the theatre?<br>The quiet life of the country ahs never appealed to me. City born and city bred. I have always<br>regarded the country as something you look at through a train window, or something you<br>occasional visit during the weekend. Most of my friends live in the city, yet they always go into<br>raptures at the mere mention of the country. Though they extol the virtues of the peaceful life, only<br>one of hem has ever gone to live in the country and he was back in town within six months. Even<br>he still lives under the illusion that country life is somehow superior to town life. He is forever<br>talking about the friendly people, the clean atmosphere, the closeness to nature and the gentle pace<br>of living. Nothing can be compared, he maintains, with the first cockcrow, the twittering of birds<br>at dawn, the sight of the rising sun glinting on the trees and pastures. This idyllic pastoral scene is<br>only part of the picture. My friend fails to mention the long and friendless winter evenings in front<br>of the TV – virtually the only form of entertainment. He says nothing about the poor selection of<br>goods in the shops, or about those unfortunate people who have to travel from the country to the<br>city every day to get to work. Why people are prepared to tolerate a four-hour journey each day<br>for the dubious privilege of living in the country is beyond me. They could be saved so much<br>misery and expense if they chose to live in the city where they rightly belong.<br>If you can do without the few pastoral pleasures of the country, you will find the city can<br>provide you with the best that life can offer. You never have to travel miles to see your friends.<br>They invariably lie nearby and are always available for an informal chat or an evening’s<br>entertainment. Some of my acquaintances in the country come up to town once or twice a year to<br>visit the theatre as a special treat. For them this is a major operation which involves considerable<br>planning. As the play draws to its close, they wonder whether they will ever catch that last train<br>home. The cit dweller never experiences anxieties of this sort. The latest exhibitions, films, or<br>plays are only a short bus ride away. Shopping, too, is always a pleasure. The latest exhibitions,<br>films, or plays are only a short bus ride away. Shopping, too, is always a pleasure. There is so<br>much variety that you never have to make do with second best. Country people run wild when<br>they go shopping in the city and stagger home loaded with as many of the exotic items as they can<br>carry. Nor is the city without its moments of beauty. There is something comforting about the<br>warm glow shed by advertisements on cold wet winter nights. Few things could be more<br>impressive than the peace that descends on deserted city streets at weekends when the thousands<br>that travel to work every day are tucked away in their homes in the country. It has always been a<br>mystery to me who city dwellers, who appreciate all these things, obstinately pretend that they<br>would prefer to live in the country.</p>
+<h1 id="New-words-and-expressions-生词和短语n"><a href="#New-words-and-expressions-生词和短语n" class="headerlink" title="New words and expressions 生词和短语n."></a>New words and expressions 生词和短语n.</h1><p>illusion<br>幻想,错觉<br>pastoral<br>adj. 田园的<br>v. breed (bred, bred)<br>培育<br>n. rapture<br>欣喜<br>v. extol<br>赞美,颂扬<br>superior<br>adj. 优越的<br>n. cockcrow<br>鸡叫<br>v. twitter<br>(鸟)吱吱叫,嘁嘁喳喳叫<br>v. glint<br>闪烁<br>n. pasture<br>牧场<br>idyllic<br>adj. 田园诗的<br>virtually<br>adv. 几乎,差不多<br>dubious<br>adj. 可疑的,怀疑的<br>n.<br>privilege<br>特权<br>miseryn. 苦难<br>n. acquaintance<br>熟人<br>n. treat<br>难得的乐事,享受<br>n. dweller<br>居住者<br>v. stagger<br>摇晃,蹒跚<br>exotic<br>adj. 导乎寻常的,外来的<br>n.<br>glow<br>白炽光<br>descend<br>v. 缩进,隐藏<br>v.<br>descend<br>缩进,隐藏<br>obstinately<br>adv. 固执地,顽固地</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>宁静的乡村生活从来没有吸引过我。我生在城市,长在城市,总认为乡村是透过火车车<br>窗看到的那个样了,或偶尔周末去游玩一下景象。我的许多朋友都住在城市,但他们只要一<br>提起乡村,马上就会变得欣喜若狂。尽管他们都交口称赞宁静的乡村生活的种种优点,但其<br>中只有一个人真去农村住过,而且不足 6 个月就回来了。即使他也仍存有幻觉,好像乡村生<br>活就是比城市生活优越。他滔滔不绝地大谈友好的农民,洁净的空气,贴近大自然的环境和<br>悠闲的生活节奏。他坚持认为,凌晨雄鸡第一声啼叫,黎明时分小鸟吱喳欢叫,冉冉升起的<br>朝阳染红树木、牧场,此番美景无与伦比。但这种田园诗般的乡村风光仅仅是一个侧面。我<br>的朋友没有提到在电视机前度过的漫长寂寞的冬夜——电视是唯一的娱乐形式。他也不说商<br>店货物品种单调,以及那些每天不得不从乡下赶到城里工作的不幸的人们。人们为什么情愿<br>每天在路上奔波 4 个小时去换取值得怀疑的乡间的优点,我是无法理解的。要是他们愿意住<br>在本来属于他们的城市,则可以让他们省去诸多不便与节约大量开支。<br>如果你愿舍弃乡下生活那一点点乐趣的话,那么你会发出城市可以为你提供生活最美好<br>的东西。你去看朋友根本不用跋涉好几英里,因为他们都住在附近,你随时可以同他们聊天或在晚上一起娱乐。我在乡村有一些熟人,他们每年进城来看一回或几回戏,并把此看作一<br>种特殊的享受。看戏在他们是件大事,需要精心计划。当戏快演完时,他们又为是否能赶上<br>末班火车回家而犯愁。这种焦虑,城里人是从未体验过的。坐公共汽车几站路,就可看到最<br>新的展览、电影、戏剧。买东西也是一种乐趣。物品种繁多,从来不必用二等品来凑合。乡<br>里人进城采购欣喜若狂,每次回家时都买足了外来商品,直到拿不动方才罢休,连走路都摇<br>摇晃晃的。城市也并非没有良辰美景。寒冷潮湿的冬夜里,广告灯箱发出的暖光,会给人某<br>种安慰。周末,当成千上万进城上班的人回到他们的乡间寓所之后,空旷的街市笼罩着一种<br>宁静气氛,没有什么能比此时的宁静更令人难忘了。城里人对这一切心里很明白,却偏要执<br>拗地装出他们喜欢住在乡村的样子,这对我来说一直是个谜。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-40/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-40/" class="post-title-link" itemprop="url">新概念英语3-Lesson 40:Who's who</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:39:34" itemprop="dateCreated datePublished" datetime="2019-03-10T15:39:34+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-40"><a href="#Lesson-40" class="headerlink" title="Lesson 40"></a>Lesson 40</h1><p>Who’s who<br>真假难辨<br>Listen to the tape then answer the question below.听录音,然后回答以下问题。<br>How did the policeman discover that the whole thing was a joke?<br>It has never been explained why university students seem to enjoy practical jokes more than<br>else. Students specialize in a particular type of practical joke: the hoax. Inviting the fire brigade to<br>put out a nonexistent fire is a crude form of deception which no self-respecting student would ever<br>indulge in. Students often create amusing situations which are funny to everyone except the<br>victims.<br>When a student recently saw two workmen using a pneumatic drill outside his university, he<br>immediately telephoned the police and informed them that two students dressed up as workmen<br>were tearing up the road with a pneumatic drill. As soon as he had hung up, he went over to the<br>workmen and told them that if a policeman ordered them to go away, they were not take him<br>seriously. He added that a student had dressed up as a policeman and was playing all sorts of silly<br>jokes on people. Both the police and the workmen were grateful to the student for this piece of<br>advance information.<br>The student did in an archway nearby where he could watch and hear everything that went on.<br>Sure enough, a policeman arrived on the scene and politely asked the workmen to go away. When<br>he received a very rude reply from one of the workmen. He threatened to remove them by force.<br>The workmen told him to do as he pleased and the policeman telephoned for help. Shortly<br>afterwards, four more policemen arrived and remonstrated with the workmen. As the men refused<br>to stop working, the police attempted to seize the pneumatic drill. The workmen struggled fiercely<br>and one of them lost his temper. He threatened to call the police. At this, the police pointed out<br>ironically that this would hardly be necessary as the men were already under arrest. Pretending to<br>speak seriously, one of the workmen asked if he might make a telephone call before being taken to<br>the station. Permission was granted and a policeman accompanied him to a pay phone. Only when<br>he saw that the man was actually telephoning the police did he realize that they had all been the<br>victims of a hoax.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n. hoax<br>骗局,戏弄<br>n. deception<br>欺骗,骗局<br>self-respecting<br>adj. 自重的<br>v.<br>indulge<br>使沉迷<br>pneumatic<br>adj. 气动的n.<br>drill<br>钻<br>silly<br>adj. 无意义的,无聊的<br>advance<br>adj. 预先的,事先获得的<br>n. archway<br>拱形门楼<br>v. remonstrate<br>规劝,告诫<br>ironically<br>adv. 讽刺地<br>n. permission<br>许可<br>v. grant<br>同意,准予</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>谁也弄不清为什么大学生好像比任何人都更喜欢恶作剧。大学生擅长一种特殊的恶作剧<br>——戏弄人。请消防队来扑灭一场根本没有的大火是一种低级骗局,有自尊心的大学生决不<br>会去做。大学生们常常做的是制造一种可笑的局面,使大家笑上一场,当然受害者是笑不出<br>来的。<br>最近有个学生看见两个工人在学校门外用风钻干活,马上打电话报告警察,说有两个学<br>生装扮成工人,正在用风钻破坏路面。挂上电话后,他又马上来到工人那儿,告诉他们若有<br>个警察来让他们走开,不要把他当回事,还对工人说,有个学生常装扮成警察无聊地同别人<br>开玩笑。警察与工人都对那个学生事先通报情况表示感谢。<br>那个学生躲在附近一拱形的门廊里,在那儿可以看见、听到现场发生的一切。果然,警<br>察来了,不礼貌地请工人离开此地;但其中一个工人粗鲁地回了几句。于是警察威胁要强行<br>使他们离开。工人说,悉听尊便。警察去打电话叫人。一会儿工夫,又来了 4 个警察,规劝<br>工人离开。由于工人拒绝停下手中的活,警察想夺风钻。两个工人奋力抗争,其中一个发了<br>火,威胁说要去叫警察。警察听后讥讽地说,这大可不必,因为他俩已被逮捕了。其中一个<br>工人装模作样地问道,在被带往警察局之前,是否可以打一个电话。警察同意了,陪他来到<br>一个投币地电话前,当他看到那个工人真的是给警察挂电话,才恍然大悟,原来他们都成一<br>场骗局的受害者。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-39/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-39/" class="post-title-link" itemprop="url">新概念英语3-Lesson 39:Nothing to worry about</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:38:57" itemprop="dateCreated datePublished" datetime="2019-03-10T15:38:57+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-39"><a href="#Lesson-39" class="headerlink" title="Lesson 39"></a>Lesson 39</h1><p>Nothing to worry about<br>不必担心<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What was the difference between Bruce’s behaviour and that of other people?<br>The rough across the plain soon became so bad that we tried to get Bruce to drive back to the<br>village we had come from. Even though the road was littered with boulders and pitted with holes,<br>Bruce was not in the least perturbed. Glancing at his map, he informed us that the next village was<br>a mere twenty miles away. It was not that Bruce always underestimated difficulties. He simply had<br>no sense of danger at all. No matter what the conditions were, he believed that a car should be<br>driven as fast as it could possibly go.<br>As we bumped over eh dusty track, we swerved to avoid large boulders. The wheels scooped<br>up stones which hammered ominously under the car. We felt sure that sooner or later a stone<br>would rip a hole in our petrol tank or damage the engine. Because of this, we kept looking back,<br>wondering if we were leaving a trail of oil and petrol behind us.<br>What a relief it was when the boulders suddenly disappeared, giving way to a stretch of plain<br>where the only obstacles were clumps of bushes. But there was worse to come. Just ahead of us<br>there was a huge fissure. In response to renewed pleadings, Bruce stopped. Though we all got out<br>to examine the fissure, he remained in the car. We informed him that the fissure extended for fifty<br>years and was tow feet wide and four feet deep. Even this had no effect. Bruce went into a low<br>gear and drove at a terrifying speed, keeping the front wheels astride the crack as he followed its<br>zigzag course. Before we had time to worry about what might happen, we were back on the plain<br>again. Bruce consulted the map once more and told us that the village was now only fifteen miles<br>away. Our next obstacle was a shallow pool of water about half a mile across. Bruce charged at it,<br>but in the middle, the car came to a grinding half. A yellow light on the dashboard flashed angrily<br>and Bruce cheerfully announced that there was no oil in the engine!</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>rough<br>adj. 崎岖不平的<br>n. boulder<br>大石块<br>v. pit<br>使得坑坑洼洼<br>v. perturb<br>使不安<br>underestimatev. 低估<br>v. swerve<br>急转变<br>v. scoop<br>挖出<br>v. hammer<br>(用锤)击打,锤打<br>ominously<br>adv. 有预兆的,不祥的<br>v. rip<br>划破,撕,扯<br>n. petrol<br>汽油<br>n. stretch<br>一大片(平地或水)<br>n. obstacle<br>障碍<br>n. clump<br>丛,簇<br>n. fissure<br>(石,地的)深缝<br>v. renew<br>重复<br>n. pleading<br>恳求<br>n. gear<br>汽车排档<br>astride<br>prep.骑,跨n.<br>n.<br>crack<br>缝隙<br>zigzag<br>“之”字形<br>shallow<br>adj. 浅的<br>v. grind (ground, ground)<br>磨擦<br>n. halt<br>停<br>n. dashboard<br>(汽车上的)仪表盘</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>穿越平原的道路高低不平,开车走了不远,路面愈加崎岖。我们想劝说布鲁斯把车开回<br>我们出发的那个村庄去。尽管路面布满石头,坑坑洼洼,但布鲁斯却一点儿不慌乱。他瞥了<br>一眼地图,告诉我们前面再走不到 20 英里就是一个村庄。这并不是说布鲁斯总是低估困难,<br>而是他压根儿没有一点儿危险感。他认为不管路面情况如何,车必须以最高速度前进。<br>我们在尘士飞扬的道路上颠簸,车子东拐西弯,以躲开那些大圆石。车轮搅起的石块锤<br>击车身,发出不祥的锤击声。我们想念迟早会飞起一个石块把油箱砸开一个窟窿,或者把发<br>动机砸坏。因此,我们不时地掉过头,怀疑车后是否留下了机油和汽油的痕迹。<br>突然大石块不见了,前面是一片平地,唯一的障碍只有一簇簇灌木丛。这使我们长长地<br>松了口气。但是更糟糕的事情在等着我们,离我们不远处,出现一个大裂缝。我们再次央求<br>布鲁斯小心,他这才把车停了下来。我们纷纷下车察看那个大裂缝,他却呆在车上。我们告<br>诉他那个大裂缝长 50 码,宽 2 英尺,深 4 英尺。这也没有对他产生任何影响。布鲁斯挂上<br>慢档,把两只前轮分别搁在裂缝的两边,顺着弯弯曲曲的裂缝,以发疯的速度向前开去。我<br>们还未来得及担心后果,车已重新开上了平地。布鲁斯又看了一眼地图,告诉我们那座村庄<br>离我们只有 15 英里了。下一个障碍是一片约半英里宽的浅水塘。布鲁斯向水塘冲去,但车<br>开到水塘当中,嘎吱一声停住了。仪表盘一盏黄灯闪着刺眼的光芒,布鲁斯兴致勃勃地宣布<br>发动机里没油了!</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-38/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-38/" class="post-title-link" itemprop="url">新概念英语3-Lesson 38:The first calender</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:38:15" itemprop="dateCreated datePublished" datetime="2019-03-10T15:38:15+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-38"><a href="#Lesson-38" class="headerlink" title="Lesson 38"></a>Lesson 38</h1><p>The first calender<br>最早的日历Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What is the importance of the dots, lines, and symbols engraved on some, bones and ivory?<br>Future historians will be in a unique position when they come to record the history of our<br>own times. They will hardly know which facts to select from the great mass of evidence that<br>steadily accumulates. What is more, they will not have to rely solely on the written word. Films,<br>videos, CDs and CD-ROMS are just some of the bewildering amount of information they will<br>have. They will be able, as it were, to see and hear us in action. But the historian attempting to<br>reconstruct the distant past is always faced with a difficult task. He has to deduce what he can<br>from the few scanty clues available. Even seemingly insignificant remains can shed interesting<br>light on the history of early man.<br>Up to now, historians have assumed that calendars came into being with the advent of<br>agriculture, for then man was faced with a real need to understand something about the seasons.<br>Recent scientific evidence seems to indicate that this assumption is incorrect.<br>Historians have long been puzzled by dots, lines and symbols which have been engraved on<br>walls, bones, and the ivory tusks of mammoths. The nomads who made these markings lived by<br>hunting and fishing during the last Ice Age which began about 35,000 B.C. and ended about<br>10,000 B.C. By correlating markings made in various parts of the world, historians have been able<br>to read this difficult code. They have found that it is connected with the passage of days and the<br>phases of the moon. It is, in fact, a primitive type of calendar. It has long been known that the<br>hunting scenes depicted on walls were not simply a form of artistic expression. They had a<br>definite meaning, for they were as near as early man could get to writing. It is possible that there is<br>a definite relation between these paintings and the markings that sometimes accompany them. It<br>seems that man was making a real effort to understand the seasons 20,000 years earlier than has<br>been supposed.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n. calendar<br>历法,日历<br>n. historian<br>历史学家<br>unique<br>adj. 无与伦比的<br>steadily<br>adv. 不断地<br>solely<br>adv. 唯一地n. video<br>录像<br>n. CD-ROOM<br>(只读)光盘驱动器<br>v. bewilder<br>令人眼花缭乱<br>v. deduce<br>推断,推理<br>scanty<br>adj. 不足的,贫乏的<br>n.<br>clue<br>线索<br>insignificant<br>adj. 不重要的<br>v. shed<br>使流出,泻<br>n. advent<br>出现,到来,来临<br>n. agriculture<br>农业<br>n. assumption<br>假定,设想<br>n. dot<br>小圆点<br>n. symbol<br>符号<br>v. engrave<br>雕刻<br>ivoryn. 象牙制品<br>n. mammoth<br>(古)长毛象<br>n. tusk<br>獠牙,长牙,象牙<br>n. nomad<br>游牧民<br>v. correlate<br>使相互联系<br>n. phase<br>月相,天相<br>primitive<br>adj. 原始的<br>v.<br>depict<br>描画,描绘</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>未来的历史学家在写我们这一段历史的时候会别具一格。对于逐渐积累起来的庞大材<br>料,他们几乎不知道选取哪些好,而且,也不必完全依赖文字材料。电影、录像、光盘和光<br>盘驱动器只是能为他们提供令人眼花缭乱的大量信息的几种手段。他们能够身临其境般地观<br>看我们做事,倾听我们讲话。但是,历史学家企图重现遥远的过去可是一项艰巨的任务,他<br>们必须根据现有的不充分的线索进行推理。即使看起来微不足道的遗物,也可能揭示人类早<br>期历史的一些有趣的内容。<br>历史学家迄今认为日历是随农业的问世而出现的,因为当时人们面临着了解四季的实际<br>需要,但近期科学研究发现,好像这种假设是不正确的。<br>长期以来,历史学家一直对雕刻在墙壁上、骨头上、古代长毛象的象牙上的点、线和形<br>形色色的符号感到困惑不解。这些痕迹是游牧人留下的,他们生活在从公元前约 35,000<br>年到公元前 10,000 年的冰川期的末期,以狩猎、捕鱼为生。历史学家通过把世界各地留下<br>的这种痕迹放在一起研究,终于弄懂了这种费解的代码。他们发现代码与昼夜更迭和月亮圆<br>缺有关,事实上是一种最原始的日历。大家早就知道,画在墙上的狩猎图景并不是单纯的艺<br>术表现形式,它们有着一定的含义,因为它们已接近古代人的文字形式。有时,这种图画与<br>墙壁上的刻痕共存,它们之间可能有一定的联系。看来人类早就致力于探索四季变迁了,比<br>人们想像的要早 20,000 年。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-37/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-37/" class="post-title-link" itemprop="url">新概念英语3-Lesson 37:The Westhaven Express</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:37:33" itemprop="dateCreated datePublished" datetime="2019-03-10T15:37:33+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-37"><a href="#Lesson-37" class="headerlink" title="Lesson 37"></a>Lesson 37</h1><p>The Westhaven Express<br>开往威斯特海温的快车<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What was the mistake the author made?<br>We have learnt to expect that trains will be punctual. After years of conditioning, most of us<br>have developed an unshakable faith in railway timetables. Ships may be delayed by storms; flights<br>may be cancelled because of bad weather, but trains must be on time. Only an exceptionally heavy<br>snowfall might temporarily dislocate railway services. It is all too easy to blame the railway<br>authorities when something does go wrong. The truth is that when mistakes occur, they are more<br>likely to be ours than theirs.<br>After consulting my railway timetable, I noted with satisfaction that there was an express<br>train to Westhaven. It went direct from my local station and the journey lasted mere hour and<br>seventeen minutes. When I boarded the train, I could not help noticing that a great many local<br>people got on as well. At the time, this did not strike me as odd. I reflected that there must be a<br>great many local people besides myself who wished to take advantage of this excellent service.<br>Neither was I surprise when the train stopped at Widley, a tiny station a few miles along the line.<br>Even a mighty express train can be held up by signals. But when the train dawdled at station after<br>station, I began to wonder, It suddenly dawned on me that this express was not roaring down the<br>line at ninety miles an hour, but barely chugging along at thirty. One hour and seventeen minutes<br>passed and we had not even covered half the distance. I asked a passenger if this was the<br>Westhaven Express, but he had not even heard of it. I determined to lodge a complaint as soon as<br>we arrived. Two hours later, I was talking angrily to the station master at Westhaven. When he<br>denied the train’s existence, I borrowed his copy of the timetable. There was a note of triumph in<br>my voice when I told him that it was there in black and white. Glancing at it briefly, he told me to<br>look again. A tiny asterisk conducted me to a footnote at the bottom of the page. It said: ‘This<br>service has been suspended.’</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>express<br>n.<br>快车;<br>adj. 高速的punctual<br>adj. 准时的<br>v.<br>condition<br>使习惯于<br>unshakable<br>adj. 不可动摇的<br>faith<br>n. 信任<br>v.<br>cancel<br>取消<br>exceptionally<br>adv. 例外地<br>v. dislocate<br>打乱(计划等)<br>v. blame<br>责怪<br>v. consult<br>请教,查阅<br>direct<br>adv. 径直地<br>odd<br>adj. 奇怪的,异常的<br>v. reflect<br>细想<br>n. advantage<br>优势<br>mighty<br>adj. 强大的,有力的<br>dawdlev. 慢吞吞地动或做<br>v. chug<br>咔嚓咔嚓地响<br>v. lodge<br>提出<br>n. complaint<br>抱怨<br>n. triumph<br>胜利<br>n. asterisk<br>星号(*)<br>v. conduct<br>引向,引导</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>我们已经习惯于相信火车总是准点的。经过多年的适应,大多数人对火车时刻表产生了<br>一种不可动摇的信念。轮船船期可能因风暴而推延,飞机航班可能因恶劣天气而取消,唯有<br>火车必然是准点的。只有非同寻常的大雪才可能暂时打乱铁路运行。因此,一旦铁路上真出<br>了问题,人们便不加思索地责备铁路当局。事实上,差错很可能是我们自己,而不是铁路当<br>局的。<br>我查看了列车时刻表,满意地了解到有一趟去威斯特海温的快车。这是趟直达车,旅途<br>总共才需 1 小时 17 分钟。上车后,我不禁注意到许多当地人也上了车。一开始,我并不感<br>到奇怪,我想除我之外,想利用快车之便的也一定大有人在。火车开出几英里即在一个小站<br>威德里停了下来。对此,我不觉得奇怪,因为即便是特别快车也可能被信号拦住。但是,当<br>火车一站接着一站往前蠕动时,我便产生了怀疑。我突然感到这趟快车并没以时速 90 英里<br>的速度呼啸前进,而是卟哧卟哧地向前爬行,时速仅 30 英里。1 小时 17 分过去了,走了还<br>不到一半路程。我问一位乘客,这是不是开往威斯特海温的那趟快车,他说从未听说过有这<br>么一趟快车。我决定到目的地就给铁路部门提意见。两小时后,我气呼呼地同威斯特海温站<br>站长说起此事。他说根本没有这趟车。于是我借他本人的列车时刻表,我带着一种胜利者的<br>调子告诉他那趟车白纸黑字。明明白白印在时刻表上。他迅速地扫视了一眼,让我再看一遍。<br>一个小小的星形符号把我的目光引到了那页底部一个说明上。上面写着:“此趟列车暂停运<br>行。”</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-36/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-36/" class="post-title-link" itemprop="url">新概念英语3-Lesson 36:A chance in a million</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:36:52 / 修改时间：15:36:44" itemprop="dateCreated datePublished" datetime="2019-03-10T15:36:52+08:00">2019-03-10</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<p>Lesson 36<br>A chance in a million<br>百万分之一的机遇<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What was the chance in a million?We are less credulous than we used to be. In the nineteenth century, a novelist would bring<br>his story to a conclusion by presenting his readers with a series of coincidences – most of them<br>wildly improbable. Readers happily accepted the fact that an obscure maidservant was really the<br>hero’s mother. A long-lost brother, who was presumed dead, was really alive all the time and<br>wickedly plotting to bring about the hero’s downfall. And so on. Modern readers would find such<br>naive solution totally unacceptable. Yet, in real life, circumstances do sometimes conspire to bring<br>about coincidences which anyone but a nineteenth century novelist would find incredible.<br>When I was a boy, my grandfather told me how a German taxi driver, Franz Bussman, found<br>a brother who was thought to have been killed twenty years before. While on a walking tour with<br>his wife, he stooped to talk to a workman. After they had gone on, Mrs. Bussman commented on<br>the workman’s close resemblance to her husband and even suggested that he might be his brother.<br>Franz poured scorn on the idea, pointing out that his brother had been killed in action during the<br>war. Though Mrs. Busssman fully acquainted with this story, she thought that there was a chance<br>in a million that she might be right. A few days later, she sent a boy to the workman to ask him if<br>his name was Hans Bussman. Needless to say, the man’s name was Hans Bussman and he really<br>was Franz’s long-lost brother. When the brothers were reunited, Hans explained how it was that he<br>was still alive. After having been wounded towards the end of the war, he had been sent to hospital<br>and was separated from his unit. The hospital had been bombed and Hans had made his way back<br>into Western Germany on foot. Meanwhile, his unit was lost and all records of him had been<br>destroyed. Hans returned to his family home, but the house had been bombed and no one in the<br>neighbourhood knew what had become of the inhabitants. Assuming that his family had been<br>killed during an air raid, Hans settled down in a village fifty miles away where he had remained<br>ever since.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>credulous<br>adj. 轻信的<br>improbable<br>adj. 不大可能的<br>obscure<br>adj. 不起眼的<br>n. maidservant<br>女仆,女佣<br>v. presume<br>假定<br>wickedly<br>adv. 心眼坏地,居心叵测地v. plot<br>密谋<br>n. downfall<br>倒台,垮台<br>naive<br>adj. 天真的<br>unacceptable<br>adj. 不能接受的<br>v.<br>conspire<br>(事件)巧合促成<br>incredible<br>adj. 难以置信的<br>n. scorn<br>嘲弄,挖苦<br>v. acquaint<br>使了解<br>v. reunite<br>使团聚<br>v. assume<br>假定,认为</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>我们不再像以往那样轻易相信别人了。在 19 世纪,小说家常在小说结尾处给读者准备<br>一系列的巧合——大部分是牵强附会,极不可能的。当时的读者却愉快地接受这样一些事实,<br>一个低贱的女佣实际上是主人公的母亲;主人公一位长期失散的兄弟,大家都以为死了,实<br>际上一直活着,并且正在策划暗算主人公;如此等等,现代读者会觉得这种天真的结局完全<br>无法接受。不过,在现实生活中,有时确实会出现一些巧合,这些巧合除了 19 世纪小说家<br>外谁也不会相信。<br>当我是个孩子的时候,我祖父给我讲了一位德国出租汽车司机弗朗兹。巴斯曼如何找到<br>了据信已在 20 年前死去的兄弟的事。一次,他与妻子徒步旅行。途中,停下来与一个工人<br>交谈,接着他们继续往前走去。巴斯曼夫人说那工人与她丈夫相貌很像,甚至猜测他可能就<br>是她丈夫的兄弟。弗朗兹对此不屑一顾,指出他兄弟已经在战争中阵亡了。尽管巴斯曼夫人<br>熟知这个情况,但她仍然认为自己的想法仍有百万分之一的可能性。几天后,她派了一个男孩去问那人是否叫汉斯.巴斯曼。不出巴斯曼夫人所料,那人的名字真是汉斯.巴斯曼,他确<br>实是弗朗兹失散多年的兄弟。兄弟俩团聚之时,汉斯说明了他活下来的经过,战争即将结束<br>时,他负伤被送进医院,并与部队失去联系。医院遭到轰炸,汉斯步行回到了西德。与此同<br>时,他所在部队被击溃,他的所有档案材料全部毁于战火。汉斯重返故里,但他的家已被炸<br>毁,左邻右舍谁也不知原住户的下落,汉斯以为全家人都在空袭中遇难,于是便在距此 50<br>英里外的一座村子里定居下来,直至当日。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-35/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-35/" class="post-title-link" itemprop="url">新概念英语3-Lesson 35:Justice was done</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:36:09" itemprop="dateCreated datePublished" datetime="2019-03-10T15:36:09+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-35"><a href="#Lesson-35" class="headerlink" title="Lesson 35"></a>Lesson 35</h1><p>Justice was done<br>伸张正义<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>The word ‘justice’ is given two different meanings in the text. What is the distinction between<br>them?<br>The word justice is usually associated with courts of law. We might say that justice has been<br>done when a man’s innocence or guilt has been proved beyond doubt. Justice is part of the<br>complex machinery of the law. Those who seek it undertake an arduous journey and can never be<br>sure that they will find it. Judges, however wise or eminent, are human and can make mistakes.<br>There are rare instances when justice almost ceases to be an abstract concept. Reward or<br>punishment are meted out quite independent of human interference. At such times, justice acts like<br>a living force. When we use a phrase like ‘it serves him right’, we are, in part, admitting that a<br>certain set of circumstances has enabled justice to act of its own accord.<br>When a thief was caught on the premises of large jewellery store on morning, the shop<br>assistants must have found it impossible to resist the temptation to say ‘it serves him right.’ The<br>shop was an old converted house with many large, disused fireplaces and tall, narrow chimneys.<br>Towards midday, a girl heard a muffed cry coming from behind on of the walls. As the cry was<br>repeated several times, she ran to tell the manager who promptly rang up the fire brigade. The cry<br>had certainly come form one of the chimneys, but as there were so many of them, the fire fighters<br>could not be certain which one it was. They located the right chimney by tapping at the walls and<br>listening for the man’s cries. After chipping through a wall which was eighteen inches thick, they<br>found that a man had been trapped in the chimney. As it was extremely narrow, the man was<br>unable to move, but the fire fighters were eventually able to free him by cutting a huge hole in the<br>wall. The sorry-looking, blackened figure that emerged, admitted at once that he had tried to break<br>into the shop during the night but had got stuck in the chimney. He had been there for nearly ten<br>hours. Justice had been done even before the man was handed over to the police.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n. justice<br>正义,公正;司法<br>n. court<br>法院<br>n. law<br>法律<br>n. innocence<br>无辜<br>v. undertake<br>承担;着手做<br>arduous<br>adj. 艰苦的,艰难的<br>abstract<br>adj. 抽象的<br>n.<br>concept<br>概念,观念<br>mete out<br>给予,处置<br>n. interference<br>干涉<br>n. accord<br>一致<br>n. premises<br>房屋<br>v. convert<br>转变,改变<br>disused<br>adj. 不再用的,废弃的n. fireplace<br>壁炉<br>v. muffle<br>捂住,厌抑<br>v. chip<br>砍,削,凿<br>v. blacken<br>使变黑<br>v. emerge<br>(从某处)出现</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>“正义”这个词常常是同法庭连在一起的。当某人被证据确凿地证明无罪的时候,我们<br>也许会说正义得到了伸张。正义是复杂的法律机器组成部分。那些寻求正义的人走的是一条<br>崎岖的道路,从来没有把握他们最终将到正义。法官无论如何聪明与有名,毕竟也是人,也<br>会出差错的。<br>在个别情况下,正义不再是一种抽象概念。奖惩的实施是不受人意志支配的。在这种时<br>候,正义像一种有生命的力量行使其职能。当我们说“他罪有应得”这句话的时候,我们部<br>分承认了某种特定的环境使得正义自动地起了作用。<br>一天上午,当一个小偷在一家大型珠宝店里被人抓住的时候,店员一定会忍不住说:<br>“他<br>罪有应得。”那是一座老式的、经过改造的房子,店里有许多废置不用的大壁炉和又高又窄<br>的烟囱。快到中午的时候,一个女售货员听见从一堵墙里传出一种闷声闷气的叫声。由于这<br>种喊叫声重复了几次,她跑去报告经理,经理当即给消防队挂了电话。喊叫声肯定是从烟囱<br>里传出来的,然而,因为烟囱太多,消防队员无法确定到底是哪一个。他们通过叫击烟囱倾<br>叫声而确定传出声音的那个烟囱。他们凿透了 18 英寸厚的墙壁,发现有个人卡在烟囱里。<br>由于烟囱太窄,那人无法动弹。消防队员在墙上挖了个大洞,才终于把他解救出来。那个看<br>来满脸沮丧、浑身漆黑的家伙从烟囱里一出来,就承认头天夜里他企图到店里行窍,但让烟<br>囱卡住了。他已经在烟囱里被困了将近 10 个小时。甚至在那人还没被送交给警察之前,正<br>义就已得到了伸张。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-34/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-34/" class="post-title-link" itemprop="url">新概念英语3-Lesson 34:A happy discovery</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:35:30" itemprop="dateCreated datePublished" datetime="2019-03-10T15:35:30+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-34"><a href="#Lesson-34" class="headerlink" title="Lesson 34"></a>Lesson 34</h1><p>A happy discovery<br>幸运的发现<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What was the ‘happy discovery’?<br>Antique shops exert a peculiar fascination on a great many people. The more expensive kind<br>of antique shop where rare objects are beautifully displayed in glass cases to keep them free from<br>dust is usually a forbidding place. But no one has to muster up courage to enter a less pretentious<br>antique shop. There is always hope that in its labyrinth of musty, dark, disordered rooms a real<br>rarity will be found amongst the piles of assorted junk that little the floors.<br>No one discovers a rarity by chance. A truly dedicated bargain hunter must have patience, and<br>above all, the ability to recognize the worth of something when he sees it. To do this, he must be at<br>least as knowledgeable as the dealer. Like a scientist bent on making a discovery, he must cherish<br>the hope that one day he will be amply rewarded.<br>My old friend, Frank Halliday, is just such a person. He has often described to me how he<br>picked up a masterpiece for a mere $50. One Saturday morning, Frank visited an antique shop in<br>my neighbourhood. As he had never been there before, he found a great deal to interest him. The<br>morning passed rapidly and Frank was about to leave when he noticed a large packing case lying<br>on the floor. The morning passed rapidly and Frank just come in, but that he could not be botheredto open it. Frank begged him to do so and the dealer reluctantly prised it open. The contents were<br>disappointing. Apart from an interesting-looking carved dagger, the box was full of crockery,<br>much of it broken. Frank gently lifted the crockery out of the box an suddenly noticed a miniature<br>painting at the bottom of the packing case. As its composition and line reminded him of an Italian<br>painting he knew well, he decided to buy it. Glancing at it briefly, the dealer told him that it was<br>worth $50. Frank could hardly conceal his excitement, for he knew that he had made a real<br>discovery. The tiny painting proved to be an unknown masterpiece by Correggio and was worth<br>hundreds of thousands of pounds.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n. antique<br>古董,古玩<br>n. fascination<br>魅力,迷惑力<br>forbidding<br>adj. 望而生畏的,望而却步的<br>v.<br>muster<br>鼓起<br>pretentious<br>adj. 自命不凡的,矫饰的<br>n.<br>labyrinth<br>迷宫<br>musty<br>adj. 陈腐的,发霉的<br>n.<br>rarity<br>稀世珍品<br>assorted<br>adj. 各式各样的<br>n. junk<br>破烂货,废品<br>v. litter<br>杂乱地布满dedicated<br>adj. 专心致志的<br>bargain hunter<br>到处找便宜货买的人<br>v. dealer<br>商人<br>v. cherish<br>期望,渴望<br>amply<br>adv. 足够地<br>n.<br>masterpiece<br>杰作<br>mere<br>adj. 仅仅的<br>v. prise<br>撬开<br>v. carve<br>镌刻<br>n. dagger<br>短剑,匕首<br>miniature<br>adj. 小巧的,小型的<br>n.<br>composition<br>构图</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>古玩店对许多人来说有一种特殊的魅力。高档一点的古玩店为了防尘,把文物漂亮地陈<br>列在玻璃柜子里,那里往往令人望而却步。而对不太装腔作势的古玩店,无论是谁都不用壮<br>着胆子才敢往里进。人们还常常有希望在发霉、阴暗、杂乱无章、迷宫般的店堂里,从杂乱<br>地摆放在地面上的、一堆堆各式各样的破烂货里找到一件稀世珍品。<br>无论是谁都不会一下子就发现一件珍品。一个到处找便宜的人必须具有耐心,而且最重<br>要的是看到珍品时要有鉴别珍品的能力。要做到这一点,他至少要像古董商一样懂行。他必须像一个专心致志进行探索的科学家那样抱有这样的希望,即终有一天,他的努力会取得丰<br>硕的成果。<br>我的老朋友弗兰克.哈利戴正是这样一个人。他多次向我详细讲他如何只花 50 英镑便买<br>到一位名家的杰作。一个星期六的上午,弗兰克去了我家附近的一家古玩店。由于他从未去<br>过那儿,结果他发现许多有趣的东西。上午很快过去了,弗兰克正准备离去,突然看见地板<br>上放着一只体积很大的货箱。古董商告诉他那只货箱刚到不久,但他嫌麻烦不想把它打开。<br>经弗兰克恳求,古董商才勉强把货箱撬开了。箱内东西令人失望。除了一柄式样别致、雕有<br>花纹的匕首外,货箱内装满陶器,而且大部分都已破碎裂。弗兰克轻轻地把陶器拿出箱子,<br>突然发现在箱底有一幅微型画,画面构图与纸条使他想起一幅他所熟悉的意大利画,于是他<br>决定将画买了下来。古董商漫不经心看了一眼那幅画,告诉弗兰克那画值 50 英镑。弗兰克<br>几乎无法掩饰自己兴奋的心情,因为他明白自己发现了一件珍品。那幅不大的画原来是柯勒<br>乔的一幅未被发现的杰作,价值几十万英镑。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-33/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-33/" class="post-title-link" itemprop="url">新概念英语3-Lesson 33:A day t remember</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:34:45" itemprop="dateCreated datePublished" datetime="2019-03-10T15:34:45+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-33"><a href="#Lesson-33" class="headerlink" title="Lesson 33"></a>Lesson 33</h1><p>A day t remember<br>难忘的一天<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>What incident began the series of traffic accidents?<br>We have all experienced days when everything goes wrong. A day may begin well enough,<br>but suddenly everything seems to get out of control. What invariably happens is that a great<br>number of things choose to go wrong at precisely the same moment. It is as if a single unimportant<br>event set up a chain of reactions. Let us suppose that you are preparing a meal and keeping an eye<br>on the baby at the same time. The telephone rings and this marks the prelude to an unforeseen<br>series of catastrophes. While you are on the phone, the baby pulls the tablecloth off the table,<br>smashing half your best crockery and cutting himself in the process. You hang up hurriedly and<br>attend to baby, crockery, etc. Meanwhile, the meal gets burnt. As if this were not enough to reduce<br>you to tears, your husband arrives, unexpectedly bringing three guests to dinner.<br>Things can go wrong on a big scale, as a number of people recently discovered in Parramatta,<br>a suburb of Sydney. During the rush hour one evening two cars collided and both drivers began to<br>argue. The woman immediately behind the two cars happened to be a learner. She suddenly got<br>into a panic and stopped her car. This made the driver following her brake hard. His wife was<br>sitting beside him holding a large cake. As she was thrown forward, the cake went right through<br>the windscreen and landed on the road. Seeing a cake flying through the air, a lorry driver who<br>was drawing up alongside the car, pulled up all of a sudden. The lorry was loaded with empty beer<br>bottles and hundreds of them slid off the back of the vehicle and on to the road. This led to yet<br>another angry argument. Meanwhile, the traffic piled up behind. It took the police nearly an hour<br>to get the traffic on the move again. In the meantime, the lorry driver had to sweep up hundreds of<br>broken bottles. Only two stray dogs benefited from all this confusion, for they greedily devoured<br>what was left of the cake. It was just one of those days!</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>n.<br>prelude<br>序幕,前奏unforeseen<br>adj. 意料之外的<br>n. series<br>系列<br>n. catastrophe<br>大祸,灾难<br>n. crockery<br>陶器,瓦器<br>n. suburb<br>郊区<br>v. collide<br>猛撞<br>n. learner<br>初学者<br>n. panic<br>惊慌,恐慌<br>n. windscreen<br>(汽车的)挡风玻璃<br>alongside<br>prep.在……的旁边,与……并排<br>v.<br>slide (slid, slid)<br>滑<br>stray<br>adj. 迷失的,离群的<br>n.<br>confusion<br>混乱<br>greedily<br>adv. 贪婪地<br>devourv.<br>狼吞虎咽地吃</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>我们大家都有过事事不顺心的日子。一天开始时,可能还不错,但突然间似乎一切都失<br>去了控制。情况经常是这样的,许许多多的事情都偏偏赶在同一时刻出问题,好像是一件无<br>关紧要的小事引起了一连串的连锁反应。假设你在做饭,同时又在照看孩子。这时电话铃响<br>了。它预示着一连串意想不到的灾难的来临。就在你接电话时,孩子把桌布从桌子上扯下来,<br>将家中最好的陶瓷餐具半数摔碎,同时也弄伤了他自己。你急急忙忙挂上电话,赶去照看孩<br>子和餐具。这时,饭又烧糊了。好像这一切还不足以使你急得掉泪,你的丈夫接着回来了,<br>事先没打招呼就带来 3 个客人吃饭。<br>就像许多人最近在悉尼郊区帕拉马塔发现的那样,有时乱子会闹得很大。一天傍晚交通<br>最拥挤时,一辆汽车撞上前面一辆汽车,两个司机争吵起来。紧跟其后的一辆车上的司机碰<br>巧是个初学者,她一惊之下突然把车停了下来。她这一停使得跟在后头的司机也来个急刹车。<br>司机妻子正坐在他身边,手里托着块大蛋糕。她往前一冲,蛋糕从挡风玻璃飞了出去掉到马<br>路上。此时,一辆卡车正好从后边开到那辆汽车边上,司机看见一块蛋糕从天而降,紧急刹<br>车。卡车上装着空啤酒瓶。成百只瓶子顺势从卡车后面滑出车外落在马路上。这又引起一场<br>唇枪舌剑的争吵。与此同时,后面的车辆排成了长龙,警察花了将近一个小时才使车辆又开<br>起来。在这段时间里,卡车司机不得不清扫那几百只破瓶子。只有两只野狗从这一片混乱中<br>得到好处,它们贪婪地吃掉了剩下的蛋糕。这就是事事不顺心的那么一天!</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/10/2019-03-10-新概念英语3-32/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/10/2019-03-10-新概念英语3-32/" class="post-title-link" itemprop="url">新概念英语3-Lesson 32:A lost ship</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-10 15:33:58" itemprop="dateCreated datePublished" datetime="2019-03-10T15:33:58+08:00">2019-03-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/新概念英语3/" itemprop="url" rel="index"><span itemprop="name">新概念英语3</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<ul>
+<li>content<br>{:toc}</li>
+</ul>
+<hr>
+<h1 id="Lesson-32"><a href="#Lesson-32" class="headerlink" title="Lesson 32"></a>Lesson 32</h1><p>A lost ship<br>一艘沉船<br>Listen to the tape then answer the question below.<br>听录音,然后回答以下问题。<br>Did the crew of the Elkor find what they were looking for? Why?<br>The salvage operation had been a complete failure. The small ship, Elkor, which had been<br>searching the Barents Sea for weeks, was on its way home. A radio message from the mainland<br>had been received by the ship’s captain instructing him to give up the search. The captain knew<br>that another attempt would be made later, for the sunken ship he was trying to find had beencarrying a precious cargo of gold bullion.<br>Despite the message, the captain of the Elkor decided to try once more. The sea bed was<br>scoured with powerful nets and there was tremendous excitement on board went a chest was<br>raised from the bottom. Though the crew were at first under the impression that the lost ship had<br>been found, the contents of the chest proved them wrong. What they had in fact found was a ship<br>which had been sunk many years before.<br>The chest contained the personal belongings of a seaman, Alan Fielding. There were books,<br>clothing and photographs, together with letters which the seaman had once received from his wife.<br>The captain of the Elkor ordered his men to salvage as much as possible from the wreck. Nothing<br>of value was found, but the numerous items which were brought to the surface proved to be of<br>great interest. From a heavy gun that was raised, the captain realized that the ship must have been<br>a cruiser. In another chest, which contained the belongings of a ship’s officer, there was an<br>unfinished letter which had been written on March 14th, 1943. The captain learnt from the letter<br>that the name of the lost ship was the Karen. The most valuable find of all was the ship’s log book,<br>parts of which it was still possible to read. From this the captain was able to piece together all the<br>information that had come to light. The Karen had been sailing in a convoy to Russia when she<br>was torpedoed by an enemy submarine. This was later confirmed by naval official at the Ministry<br>of Defiance after the Elkor had returned home. All the items that were found were sent to the War<br>Museum.</p>
+<h1 id="New-words-and-expressions-生词和短语"><a href="#New-words-and-expressions-生词和短语" class="headerlink" title="New words and expressions 生词和短语"></a>New words and expressions 生词和短语</h1><p>v. salvage<br>救助,营救;打捞<br>n. Barents<br>巴伦支(海)<br>sunken<br>adj. 沉没的<br>n. cargo<br>货物<br>n. bullion<br>金条;银条<br>v. scour<br>彻底搜索<br>n. chest<br>大箱子<br>contentsn. (复数)所装的东西<br>n. belongings<br>(复数)所有物<br>n. item<br>物件<br>n. cruiser<br>巡洋舰<br>n. find<br>找到的物品<br>log book<br>航海日志<br>v. piece<br>拼成整体<br>n. convoy<br>护航<br>v. torpedo<br>用鱼雷攻击<br>n. submarine<br>潜水艇<br>naval<br>adj. 海军的<br>n.<br>ministry<br>(政府的)部</p>
+<h1 id="参考译文"><a href="#参考译文" class="headerlink" title="参考译文"></a>参考译文</h1><p>打捞工作彻底失败了。小船“埃尔科”号在巴伦支海搜寻了几个星期之后,正在返航途<br>中。返航前,该船船长收到了大陆发来的电报,指示他们放弃这次搜寻。船长知道日后还会<br>再作尝试,因为他试图寻找的沉船上载有一批珍贵的金条。<br>尽管船长接了电报,他还是决定再试一试。他们用结实的网把海床搜索了一遍。当一只<br>箱子从海底被打捞上来时,甲板上人们激动不已。船员们开始认为沉船找着了,但海底沉箱<br>内的物品证明他们弄错了。事实上,他们发现的是另一艘沉没多年的船。<br>木箱内装有水手艾伦.菲尔丁的私人财物,其中有书箱、衣服、照片以及水手收到的妻子的来信。<br>“埃尔科”号船长命令船员们尽量从沉船中打捞物品,但没发现什么值钱的东西,<br>不过打捞出来的众多的物品还是引起了大家极大的兴趣。从捞起的一门大炮来看,船长认为<br>那艘船一定是艘巡洋舰。另一只海底沉箱中装的是船上一位军官的财物,其中有一封写于<br>1943 年 3 月 14 日的信,但没有写完。从这封信中船长了解到沉船船名是“卡伦”号。打捞<br>到的东西中最有价值的是船上的航海日志,其中有一部分仍然清晰可读。据此,船长可以将<br>所有的那些已经搞清的材料拼凑起来。“卡伦”号当年在为其他船只护航驶往俄国的途中突<br>然遭到敌方潜水艇鱼雷的袭击。这一说法在“埃尔科”号返</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">60</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+  <script id="ribbon" size="300" alpha="0.6" zindex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
