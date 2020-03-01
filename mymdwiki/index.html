@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyMdWiki</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="fragment" content="!">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+<meta charset="UTF-8">
+<title>Marked in the browser</title>
+<!--  -->
+<link
+	href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css"
+	media="all" rel="stylesheet" type="text/css" />
+<link
+	href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css"
+	media="all" rel="stylesheet" type="text/css" />
+<!-- -->
+<!-- for editor.md -->
+
+<link rel="shortcut icon" href="picture/from_editor_md/favicon.ico"
+	type="image/x-icon" />
+<!-- for editor.md end -->
+<script type="text/javascript">
+		//浏览器兼容设置，当浏览器没有 startsWith/endsWith方法时
+		if(!String.prototype.startsWith){
+			String.prototype.startsWith=function(head){
+				return this.substr(0,head.length==head);
+			}
+		}
+		if(!String.prototype.endsWith){
+			String.prototype.endsWith=function(end){
+				return this.substr(this.length-end.length);
+			}
+		}
+	
+		var pageSetting = {
+			'scrollTime'		:		500,
+			'markdown_header'	:		{},
+			'debug'				:		true,//可输出调试信息
+			'bookmarkMarkId'	:		Math.random()//bookmark标签过渡标记
+		};
+	</script>
+<script src="lib/marked.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>-->
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/toc_conf.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc/js/all_toc.js"></script>
+<script type="text/javascript" src="toc/js/directory_toc.js"></script>
+<script type="text/javascript" src="toc/js/fenlei_toc.js"></script>
+<script type="text/javascript" src="toc/js/tag_toc.js"></script>
+<script type="text/javascript" src="toc/js/all_toc_without_header.js"></script>
+
+<!-- for editor.md -->
+<!--<script src="js/from_editor_md/jquery.min.js"></script>-->
+<script src="js/from_editor_md/marked.min.js"></script>
+<script src="js/from_editor_md/prettify.min.js"></script>
+<script src="js/from_editor_md/raphael.min.js"></script>
+<script src="js/from_editor_md/underscore.min.js"></script>
+<script src="js/from_editor_md/sequence-diagram.min.js"></script>
+<script src="js/from_editor_md/flowchart.min.js"></script>
+<script src="js/from_editor_md/jquery.flowchart.min.js"></script>
+<script src="js/from_editor_md/editormd.js"></script>
+<script src="js/encoding/encoding.js"></script>
+<!-- for editor.md end-->
+<script type="text/javascript">
+		// BOOKMARK da534s
+		// TODO fadfa
+		//打印调试信息
+		var print_debug_info = true;
+		
+		function printDebugInfo(text){
+			if(print_debug_info){
+				console.log(text);
+			}
+		}
+		
+		//部署到github上
+		var GITHUB_ENVIRONMENT = 0;
+	
+		//本地开发
+		var LOCAL_DEVELOP_ENVIRONMENT = 1;
+		
+		//使用环境
+		var environment = LOCAL_DEVELOP_ENVIRONMENT;
+		
+		//设置github信息
+		var github_user_name = "zhulb";
+		
+		var github_repo_name = "note";
+		
+		var github_branch = "master";
+		
+		var github_static_source_url = "https://raw.githubusercontent.com/"+github_user_name+"/"+github_repo_name+"/"+github_branch+"/"; //静态请求资源路径
+		
+		//访问的页面是否指定markdown文档
+		var is_select_file = false;
+		
+		//这个文件的文件名可能经常改变，将可能的文件名添加到文件名列表
+		var possible_file_names = ['index.html','test.html'];
+		
+		//根据路径的类型，返回构造Url用的base url
+		function getBaseUrl(){
+			var result = null;
+			if (is_select_file) {
+				result =  window.location.href.replace(/#md.*/,'#md/');
+			} else if(window.location.href.indexOf("html")<0) {
+				result = window.location.href+"/index.html#md/";
+			} else {
+				result = window.location.href+"#md/";
+			}
+			var returnResult = result.replace(/\/\//g,'/');
+			return returnResult;
+		}
+		
+		//根据路径的类型，返回构造图片路径的base url
+		function getPictureBaseUrl(){
+			var result = null;
+			//github page
+			if (environment == GITHUB_ENVIRONMENT) {
+				result =  window.location.href.replace(/#md.*/,'#md/');
+			//本地开发/部署环境
+			} else {
+				result = window.location.href+"#md/";
+				
+			}
+			return result;
+		}
+		
+		//自动判断环境
+		function checkEnvironment(){
+			if (window.location.origin.indexOf('github.io')>0){
+				environment = GITHUB_ENVIRONMENT;	
+				printDebugInfo("--正在GitHubPage上访问--");
+			} else {
+				environment = LOCAL_DEVELOP_ENVIRONMENT;
+				if(pageSetting.debug)printDebugInfo("--本地部署或者开发环境--");
+			}
+		}
+		
+		checkEnvironment();
+		
+		environment = LOCAL_DEVELOP_ENVIRONMENT;
+		
+		var dynamicLoading = {
+		  css: function(path){
+		 if(!path || path.length === 0){
+		  throw new Error('argument "path" is required !');
+		 }
+		 var head = document.getElementsByTagName('head')[0];
+		    var link = document.createElement('link');
+		    link.href = path;
+		    link.rel = 'stylesheet';
+		    link.type = 'text/css';
+		    head.appendChild(link);
+		  },
+		  js: function(path){
+		 if(!path || path.length === 0){
+		  throw new Error('argument "path" is required !');
+		 }
+		 var head = document.getElementsByTagName('head')[0];
+		    var script = document.createElement('script');
+		    script.src = path;
+		    script.type = 'text/javascript';
+		    head.appendChild(script);
+		  }
+		}
+		
+		$(function(){
+			//动态加载 CSS 文件
+			if(environment == GITHUB_ENVIRONMENT){
+			//github申请静态资源的方式不是直接写路径
+				var cssBaseUrl = "https://raw.githubusercontent.com/"+github_user_name+"/"+github_repo_name+"/"+github_branch+"/";
+				dynamicLoading.css(cssBaseUrl+"/toc/css/zTreeStyle/zTreeStyle.css");
+				dynamicLoading.css(cssBaseUrl+"css/from_editor_md/style.css");
+				dynamicLoading.css(cssBaseUrl+"css/from_editor_md/editormd.preview.css");
+			} else {
+				dynamicLoading.css("toc/css/zTreeStyle/zTreeStyle.css");
+				dynamicLoading.css("css/from_editor_md/style.css");
+				dynamicLoading.css("css/from_editor_md/editormd.preview.css");
+			}
+			
+			//动态加载 JS 文件
+			//dynamicLoading.js("test.js");
+		
+		
+			//document.getElementById("thisPage").href=window.location.href;
+			//一、分析地址信息
+			var addressInfo=getAddressInfo();
+			document.title=addressInfo.title;
+			//var type=addressInfo.url.match(/(?=.*)\..*?$/)[0];
+			var type=addressInfo.url.match(/(.*)(\..*?$)/)[2];
+			var bookmarkInfos=[];
+			//二、下载文档并渲染
+			$.ajax({
+				'url'		:	addressInfo.url,
+				'dataType'	:	'text'
+			/*下载成功*/	
+			}).done(function(data){
+				setTimeout(function(){
+					
+					//图片路径处理-获取存放图片的picture目录的网络路径
+					if(environment == GITHUB_ENVIRONMENT){
+						data = github_static_source_url+"/picture";
+					} else {
+						//1。图片路径处理
+						var appname=window.location.pathname.replace(/\//g,'');
+						appname=appname.replace(/mdwiki-debug.html|index-github2.html|index.html/g,'');
+						data=data.replace(/\(file:\/\/\/.*?picture/g,function(str){
+							appname=appname.replace('test.html','');
+							appname=appname.replace('index.html','');
+							var returnUrl="("+window.location.origin+"/"+appname+"/picture";
+							return returnUrl;
+						});
+						//1.1 图片处理
+						data=data.replace(/\!\[.*?\]\(.*?\)/g,function(str){
+							if(str.indexOf("https://")>0||str.indexOf("http://")>0) return str;
+							return str.replace(/\(.*? /,function(url){
+								var result="("+window.location.origin+"/"+appname+"/"+url.substr(1)+" ";
+								return result;
+							});
+						});
+						//2.导航处理：处理连接到其他文章的导航链接
+						data=data.replace(/\[.*?\]\(.*?\)/g,function(str){
+							str=str.replace(/\(.*?\)/,function(url){
+								
+								if(url.startsWith("(http://")||url.startsWith("(https://")){
+									return url;
+								} else {
+									url=url.substr(0,url.length-1);
+									url=url.substr(1);
+									return "(index.html#"+url+")"
+									//return "("+getBaseUrl()+url+")";
+								}
+								
+								/**if(url.startsWith("(md")){
+									url=url.substr(0,url.length-1);
+									url=url.substr(4);
+									return "(index.html#md/"+url+")"
+									//return "("+getBaseUrl()+url+")";
+								} else if(url.startsWith("(http://")||url.startsWith("(https://")){
+									return url;
+								} else {
+									url=url.substr(1);
+									return "(http://"+url;
+								}**/
+							});
+							return str;
+						});
+						//3.@标签处理
+						//去除分类信息
+						var match;
+						while(match=data.match(/(\n@category.*?(\r\n|\n))/g)!=null){
+							data=data.replace(/(\n@category.*?(\r\n|\n))/g,function(){
+								return '\n\n';
+							});
+						}
+						//去除标签信息
+						while(match=data.match(/(\n@tag.*?(\r\n|\n))/g)!=null){
+							data=data.replace(/(\n@tag.*?(\r\n|\n))/g,function(){
+								return '\n\n';
+							});
+						}
+						//根据文件是否是md文档分别处理
+						if(addressInfo.title.endsWith(".md")||addressInfo.title=="MyMdWiki"){
+							//如果是markdown文档
+							var bookmarkCount=0;
+							while(match=data.match(/(\n@bookmark.*?(\r\n|\n))/)!=null){
+								data=data.replace(/(\n@bookmark.*?(\r\n|\n))/,function(str){
+									var strs=str.split(/\/| /);
+									var bookmark=strs[strs.length-1];
+									return "\n![书签图片链接无效](sys_pictures/bookmark.jpg \""+(bookmarkCount++)+"_"+bookmark+"\")"+bookmark+"\n";
+								});
+							}
+						} else {
+							//如果是文本，则设置特殊标记，生成网页代码后再处理
+							var bookmarkCount=0;
+							while(match=data.match(/(\n@bookmark.*?(\r\n|\n))/)!=null){
+								data=data.replace(/(\n@bookmark.*?(\r\n|\n))/,function(str){
+									var strs=str.split(/\/| /);
+									var bookmark=strs[strs.length-1];
+									bookmarkInfos[bookmarkInfos.length]=bookmark;
+									return "\n"+pageSetting.bookmarkMarkId+"\n";
+								});
+							}
+							data='```\n'+data+'\n```';
+						}
+						
+					}
+					//1.生成html代码，并渲染
+					createHtml(data);
+					//2.生成左侧header导航
+					var tree=createTree();
+					//3.如果不是md文档，处理bookmark标签
+					if(!addressInfo.title.endsWith(".md")){
+						var target=document.getElementById("test-editormd-view");
+						var codes=target.getElementsByTagName("code");
+						var bookmarkInfoPointer=0;
+						for(var i=0;i<codes.length;i++){
+							var spans=codes[i].getElementsByTagName("span");
+							if(spans==null||spans.length==0)continue;
+							var firstSpanInnerHTML=spans[0].innerHTML;
+							if(firstSpanInnerHTML==pageSetting.bookmarkMarkId){
+								var bookmark=bookmarkInfos[bookmarkInfoPointer];
+								spans[0].innerHTML="<img src=\"sys_pictures/bookmark.jpg\" alt=\"书签图片链接无效\" title=\""+bookmarkInfoPointer+"_"+bookmark+"\">"+bookmark;
+								bookmarkInfoPointer++;
+							}
+						}
+					}
+					//4.分析地址信息，滚动到指定的位置
+					scroll(addressInfo);
+					//5.设置文章中的链接打开方式为blank
+					var target=document.getElementById("test-editormd-view");
+					var links=target.getElementsByTagName("a");
+					for(var i=0;i<links.length;i++){
+						var cur=links[i];
+						var href=cur.href;
+						if(href!=null&&href!=''&&href!='javascript:void(0);'){
+							cur.target='_blank';
+						}
+					}
+					//4.改变地址
+					$("p a").each(function(index,element){
+						if(element.href!=null&&element.href.indexOf("mymdwiki")>0){
+							//var href=element.href.replace("mymdwiki/md","mymdwiki/index-github3.html#md");
+							var href=element.href;
+							href=href.replace(/md\/\//g,"md/");
+							element.href=href;
+							element.target="_blank";
+						}
+					});
+				
+				},500);
+				//下载失败
+			}).fail(function(){
+				console.error('下载文件失败!');
+			});
+		});
+		
+		//分析地址信息，滚动到指定的位置
+		function scroll(addressInfo){
+			if(''!=addressInfo.id){
+				$('html, body').animate({  
+					scrollTop: $(treeNode._url).offset().top  
+				}, pageSetting.scrollTime); 
+				return;
+			}
+			if(''!=addressInfo.content){
+				$(jquery_ztree_toc_opts.documment_selector).find(":header").each(function(index,element){
+					if(element.innerText.indexOf(addressInfo.content)!=-1){
+						$('html, body').animate({  
+							scrollTop: $(element).offset().top  
+						}, pageSetting.scrollTime);
+						return false;
+					}
+				});
+			}
+			if(typeof(addressInfo['bk'])!='undefined'&&addressInfo['bk']!=''){
+				//TODO 页面滚动到bookmark
+				if(addressInfo['title'].endsWith('.md')||addressInfo['title'].endsWith('.txt')){
+					gotoBookmark(addressInfo['bk'],true);
+				} else {
+					gotoBookmark(addressInfo['bk'],false);
+				}
+				
+			}
+		}
+		
+		//生成html代码，并渲染
+		function createHtml(data){
+			var create=editormd.markdownToHTML("test-editormd-view", {
+				markdown        : data ,//+ "\r\n" + $("#append-test").text(),
+				//htmlDecode      : true,       // 开启 HTML 标签解析，为了安全性，默认不开启
+				htmlDecode      : "style,script,iframe",  // you can filter tags decode
+				//toc             : false,
+				tocm            : true,    // Using [TOCM]
+				//tocContainer    : "#custom-toc-container", // 自定义 ToC 容器层
+				//gfm             : false,
+				//tocDropdown     : true,
+				// markdownSourceCode : true, // 是否保留 Markdown 源码，即是否删除保存源码的 Textarea 标签
+				emoji           : true,
+				taskList        : true,
+				tex             : true,  // 默认不解析
+				flowChart       : true,  // 默认不解析
+				sequenceDiagram : true,  // 默认不解析
+			});
+			return create;
+		}
+		
+		//生成目录树
+		function createTree(){
+			var css_conf = eval(markdown_panel_style);
+			$('#readme').css(css_conf)
+
+			var conf = eval(jquery_ztree_toc_opts);
+			return $('#tree').ztree_toc(conf);
+		}
+		
+		//解析地址信息
+		function getAddressInfo(){
+			var href=window.location.href;
+			//var pattern=/.*?\.html#(.*?)#.*|.*?\.html#(.*)/;
+			var pattern=/.*?\.html#(.*(\.md|\.txt|\.java|\.css|\.info|\.js)).*/;
+			var match = href.match(pattern);
+			var url=match==null?"index.md":match[1];
+			is_select_file = match ==null? false : true;
+			var id="";//markdown文档的修改会导致id变化，所有采用匹配的方式，如果标题没有太大修改则可能会匹配到
+			pattern=/.*#(.*?)\.cont.*/;
+			match = href.match(pattern);
+			match=null==match?[]:match;
+			var content=match.length>1?match[1]:"未指定标题";
+			pattern=/.*\/(.*?(\.md|\.txt)).*/;
+			match= href.match(pattern);
+			var title=match==null?"MyMdWiki":match[1];
+			if(pageSetting.debug)console.log("content:"+content);
+			
+			//解析参数
+			var header=null;
+			var bookmark=null;
+			
+			var args={};
+			pattern=/\?(.*)/;
+			match=href.match(pattern);
+			if(match!=null){
+				var args=match[1].split("&");
+				for(var i=0;i<args.length;i++){
+					var arg=args[i];
+					var entry=arg.split("=");
+					args[entry[0]]=entry[1];
+				}
+			}
+			
+			var result=args;
+			result['url']=url;
+			result['id']=id;
+			result['title']=decodeURI(title);
+			
+			return result;
+		}
+		
+		//跳转到头部
+		function gotoHead(){
+			$('html, body').animate({  
+				scrollTop: $("#topElement").offset().top  
+			}, pageSetting.scrollTime);
+		}
+		
+		var ToolBarFuns = {
+			test	:	function(exp){
+				alert(getBaseUrl());
+			},
+			'2index':	function(){
+				window.open(getBaseUrl()+"/index.md");
+			},
+			updateIndexMd
+					:	function(){
+				$.ajax({
+					//'url' :	'md/updateIndexMd.do'
+					'url' : 'markdown/updateIndex.action'
+				}).done(function(data){
+					//var returnMsg=eval("("+data+")")
+					if(data.result){
+						alert('跟新成功.');
+					} else {
+						alert('跟新失败!');
+					}	
+				});
+			}
+		};
+		
+		function gotoBookmark(index,isMdFile){
+			if(isMdFile){
+				var imgs=document.getElementById("test-editormd-view").getElementsByTagName("img");
+				var img;
+				if(imgs!=null){
+					for(var i=0;i<imgs.length;i++){
+						img=imgs[i];
+						if(img.title.startsWith((index)+"_")){
+							$('html, body').animate({
+			                    scrollTop: $(img).offset().top-8>0?$(img).offset().top-8:0
+			                }, 1000);
+							return;
+						}
+					}
+				}
+				alert("书签已失效!");
+			}
+		}
+	</script>
+</head>
+<body>
+	<a id="topElement"></a>
+	<a
+		style="position: fixed; bottom: 20px; right: 10px; font-size: 20px; color: blue;"
+		href="javascript:void(0)" onclick="gotoHead()" id="top">top</a>
+	<button style="position: fixed; top: 10px; right: 5px; width: 70px;"
+		onclick="ToolBarFuns['2index']()">导航</button>
+	<button style="position: fixed; top: 40px; right: 5px; width: 70px;"
+		onclick="ToolBarFuns.updateIndexMd()">更新导航</button>
+	<button style="position: fixed; top: 70px; right: 5px; width: 70px;"
+		onclick="ToolBarFuns.test()">test</button>
+	<input style="position: fixed; top: 100px; right: 5px; width: 70px;"
+		value="搜索" disabled />
+	<select style="position: fixed; top: 130px; right: 5px; width: 70px;"
+		value="页内书签" disabled>
+		<option select="true" style="color: color:#ccc;">书签</option>
+	</select>
+	<input style="position: fixed; top: 160px; right: 5px; width: 70px;"
+		value="D:\fadsf\adfadfadf\fdas.md" disabled />
+	<div id="layout">
+		<div style='width: 25%;'>
+			<ul id="tree" class="ztree" style='width: 100%; display: block'>
+			</ul>
+			</ul>
+		</div>
+		<div id='readme' style='width: 70%; margin-left: 20%;'>
+			<article class='markdown-body' id="markdown-body">
+				<div id="test-editormd-view"></div>
+			</article>
+		</div>
+	</div>
+</body>
+</html>

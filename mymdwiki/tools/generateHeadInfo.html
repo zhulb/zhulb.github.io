@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet"
+	href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	crossorigin="anonymous">
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<!--	<script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+<script type="text/javascript">
+		function submit(){
+			var path=document.getElementById("path").value;
+			$.ajax({
+				'url'		:	window.location.origin+"/mymdwiki/tools/servlet/generateHeadInfo.do",
+				'dataType'	:	'json',
+				'type'		:	'post',
+				'data'		:	{
+					'path'	:	path
+				}
+			}).done(function(data){
+				alert('调用成功!');
+			}).fail(function(){
+				alert('调用失败!');
+			});
+		}
+	</script>
+</head>
+<body>
+	<div style="margin-top: 30px; margin-left: 30px;">
+		<table>
+			<tr>
+				<td>请输入路径:</td>
+				<td><input type="text" size=35 name="path" id="path" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="button" value="提交" onclick="submit()" /></td>
+			</tr>
+
+			<!-- 
+		<INPUT TYPE="file" ID="SelFile" SIZE=35 STYLE="font-size:9pt;position:absolute;top:30px;left:45px" webkitdirectory />
+		<BUTTON NAME="btnOk"style="font-size:9pt;position:absolute;top:80px;left:70px;width=2cm" onclick="fnDoOkClick()">确&nbsp定</BUTTON>
+		<BUTTON NAME="btnOk"style="font-size:9pt;position:absolute;top:80px;left:180px;width=2cm" onclick="fnDoCancelClick()">取&nbsp消</BUTTON>
+		 -->
+		</table>
+	</div>
+</body>
+</html>
+
